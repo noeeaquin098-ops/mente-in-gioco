@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ficha 1 — Il mio mondo di colori · Mente in Gioco™</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --cream:#F8F1E4;--dark:#173D35;--orange:#E95A2B;
+  --yellow:#F2BD36;--green:#39734B;--blue:#4DB9F4;
+  --pink:#F78FB3;--violet:#B57EDC
+}
+body{
+  font-family:'DM Sans',sans-serif;
+  background:#B5A99A;
+  display:flex;justify-content:center;
+  padding:28px;min-height:100vh
+}
+.page{
+  width:210mm;background:var(--cream);
+  padding:13mm 15mm 10mm;
+  display:flex;flex-direction:column;gap:4.5mm;
+  box-shadow:0 8px 40px rgba(0,0,0,.3)
+}
+/* Header */
+.header{
+  background:var(--dark);border-radius:13px;
+  padding:5mm 7mm;
+  display:grid;grid-template-columns:auto 1fr auto;
+  align-items:center;gap:5mm;min-height:21mm
+}
+.brand-block{display:flex;flex-direction:column;gap:1mm}
+.brand-name{
+  font-family:'Bricolage Grotesque',sans-serif;
+  font-size:10pt;font-weight:800;
+  color:var(--yellow);letter-spacing:.3px
+}
+.ficha-ref{
+  font-size:7pt;color:rgba(255,255,255,.6);
+  text-transform:uppercase;letter-spacing:1px
+}
+.ficha-title{
+  font-family:'Bricolage Grotesque',sans-serif;
+  font-size:17pt;font-weight:800;
+  color:#fff;text-align:center;line-height:1.1
+}
+/* Canvas */
+.canvas{
+  background:#fff;border-radius:10px;
+  border:2.5px solid var(--dark);
+  flex:1;display:flex;align-items:stretch;
+  min-height:147mm;overflow:hidden
+}
+.canvas svg{width:100%;height:100%;display:block}
+/* Consigna */
+.consigna{
+  background:#fff;border:2px solid var(--orange);
+  border-radius:10px;padding:3.5mm 5mm;
+  display:flex;align-items:center;gap:4mm
+}
+.consigna-icon{width:30px;height:30px;flex-shrink:0}
+.consigna-text{
+  font-family:'Bricolage Grotesque',sans-serif;
+  font-weight:700;font-size:12pt;
+  color:var(--dark);line-height:1.35
+}
+/* Variants */
+.variants{
+  background:var(--dark);border-radius:9px;
+  padding:3mm 5mm;
+  display:grid;grid-template-columns:repeat(3,1fr);gap:3mm
+}
+.v-age{
+  font-size:7pt;font-weight:500;color:var(--yellow);
+  text-transform:uppercase;letter-spacing:.8px;
+  margin-bottom:1.5mm;display:block
+}
+.v-desc{font-size:8pt;color:#fff;line-height:1.4}
+/* Footer */
+.footer{
+  display:flex;justify-content:space-between;padding:0 1mm
+}
+.footer span{font-size:7pt;color:var(--dark);opacity:.5}
+@media print{
+  *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+  body{background:none;padding:0;margin:0}
+  .page{box-shadow:none}
+  @page{size:A4;margin:0}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="brand-block">
+      <span class="brand-name">Mente in Gioco™</span>
+      <span class="ficha-ref">Attività 1 · 3–5 anni</span>
+    </div>
+    <div class="ficha-title">Il mio mondo<br>di colori</div>
+    <!-- Lupino mini (header) -->
+    <svg width="52" height="66" viewBox="0 0 52 66" fill="none">
+      <ellipse cx="26" cy="52" rx="15" ry="15" fill="#E95A2B" stroke="#173D35" stroke-width="2"/>
+      <path d="M13 50 Q26 41 39 50 L39 67 Q26 73 13 67Z" fill="#39734B" stroke="#173D35" stroke-width="1.5"/>
+      <circle cx="26" cy="29" r="18" fill="#E95A2B" stroke="#173D35" stroke-width="2"/>
+      <polygon points="10,16 5,3 19,14" fill="#E95A2B" stroke="#173D35" stroke-width="2"/>
+      <polygon points="42,16 47,3 33,14" fill="#E95A2B" stroke="#173D35" stroke-width="2"/>
+      <polygon points="11,15 7,6 18,14" fill="#F78FB3"/>
+      <polygon points="41,15 45,6 34,14" fill="#F78FB3"/>
+      <ellipse cx="26" cy="35" rx="9" ry="7" fill="#F8F1E4" stroke="#173D35" stroke-width="1.5"/>
+      <circle cx="18" cy="25" r="3.5" fill="#173D35"/>
+      <circle cx="34" cy="25" r="3.5" fill="#173D35"/>
+      <circle cx="19" cy="24" r="1.3" fill="white"/>
+      <circle cx="35" cy="24" r="1.3" fill="white"/>
+      <ellipse cx="26" cy="32" rx="2.5" ry="2" fill="#173D35"/>
+      <path d="M21 37 Q26 42 31 37" stroke="#173D35" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="26" cy="13" rx="20" ry="4" fill="#39734B" stroke="#173D35" stroke-width="1.5"/>
+      <rect x="13" y="3" width="26" height="13" rx="5" fill="#39734B" stroke="#173D35" stroke-width="1.5"/>
+      <rect x="13" y="12" width="26" height="4" fill="#F2BD36"/>
+    </svg>
+  </div>
+
+  <!-- CANVAS — scena da colorare -->
+  <div class="canvas">
+    <svg viewBox="0 0 740 520" xmlns="http://www.w3.org/2000/svg">
+      <rect width="740" height="520" fill="white"/>
+
+      <!-- Sole (alto destra) -->
+      <circle cx="660" cy="72" r="38" fill="none" stroke="#173D35" stroke-width="2.5"/>
+      <!-- Raggi -->
+      <line x1="660" y1="24" x2="660" y2="14" stroke="#173D35" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="660" y1="120" x2="660" y2="130" stroke="#173D35" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="612" y1="72" x2="602" y2="72" stroke="#173D35" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="708" y1="72" x2="718" y2="72" stroke="#173D35" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="626" y1="38" x2="619" y2="31" stroke="#173D35" stroke-width="2" stroke-linecap="round"/>
+      <line x1="694" y1="106" x2="701" y2="113" stroke="#173D35" stroke-width="2" stroke-linecap="round"/>
+      <line x1="694" y1="38" x2="701" y2="31" stroke="#173D35" stroke-width="2" stroke-linecap="round"/>
+      <line x1="626" y1="106" x2="619" y2="113" stroke="#173D35" stroke-width="2" stroke-linecap="round"/>
+      <!-- Faccina sole -->
+      <circle cx="650" cy="66" r="3" fill="#173D35"/>
+      <circle cx="670" cy="66" r="3" fill="#173D35"/>
+      <path d="M645 79 Q660 89 675 79" stroke="#173D35" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+      <!-- Nuvola 1 (sinistra) -->
+      <g transform="translate(55,42)">
+        <ellipse cx="55" cy="28" rx="30" ry="20" fill="none" stroke="#173D35" stroke-width="2"/>
+        <ellipse cx="85" cy="33" rx="23" ry="17" fill="none" stroke="#173D35" stroke-width="2"/>
+        <ellipse cx="28" cy="36" rx="20" ry="14" fill="none" stroke="#173D35" stroke-width="2"/>
+        <rect x="6" y="38" width="105" height="15" fill="white" stroke="none"/>
+        <path d="M6 42 L111 42" stroke="#173D35" stroke-width="2"/>
+      </g>
+
+      <!-- Nuvola 2 (centro) -->
+      <g transform="translate(290,22)">
+        <ellipse cx="55" cy="30" rx="36" ry="22" fill="none" stroke="#173D35" stroke-width="2"/>
+        <ellipse cx="92" cy="36" rx="27" ry="19" fill="none" stroke="#173D35" stroke-width="2"/>
+        <ellipse cx="22" cy="38" rx="22" ry="16" fill="none" stroke="#173D35" stroke-width="2"/>
+        <rect x="0" y="44" width="122" height="16" fill="white" stroke="none"/>
+        <path d="M0 47 L122 47" stroke="#173D35" stroke-width="2"/>
+      </g>
+
+      <!-- Aquilone -->
+      <g transform="translate(480,35)">
+        <path d="M28 0 L56 32 L28 64 L0 32Z" fill="none" stroke="#173D35" stroke-width="2"/>
+        <line x1="28" y1="0" x2="28" y2="64" stroke="#173D35" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <line x1="0" y1="32" x2="56" y2="32" stroke="#173D35" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <path d="M28 64 Q36 82 24 96 Q32 112 20 126" stroke="#173D35" stroke-width="1.5" fill="none"/>
+        <ellipse cx="31" cy="80" rx="6" ry="4" fill="none" stroke="#173D35" stroke-width="1.5" transform="rotate(20,31,80)"/>
+        <ellipse cx="23" cy="112" rx="6" ry="4" fill="none" stroke="#173D35" stroke-width="1.5" transform="rotate(-15,23,112)"/>
+      </g>
+
+      <!-- Uccellini -->
+      <path d="M195 85 Q206 77 217 85" stroke="#173D35" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M226 68 Q238 60 250 68" stroke="#173D35" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M370 78 Q381 70 392 78" stroke="#173D35" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+      <!-- Stelle decorative -->
+      <circle cx="440" cy="58" r="2.5" fill="#173D35"/>
+      <circle cx="462" cy="45" r="2" fill="#173D35"/>
+      <circle cx="448" cy="51" r="1.5" fill="#173D35"/>
+
+      <!-- Collina lontana (sfondo) -->
+      <path d="M0 340 Q90 295 190 325 Q310 358 430 315 Q540 278 660 305 Q710 318 740 310 L740 520 L0 520Z"
+            fill="none" stroke="#173D35" stroke-width="1.5" opacity=".35"/>
+
+      <!-- Collina principale -->
+      <path d="M0 295 Q100 255 200 282 Q300 310 400 272 Q500 240 610 268 Q680 282 740 270 L740 520 L0 520Z"
+            fill="none" stroke="#173D35" stroke-width="2.5"/>
+
+      <!-- Albero (sinistra) -->
+      <g transform="translate(55,165)">
+        <rect x="20" y="94" width="14" height="56" rx="4" fill="none" stroke="#173D35" stroke-width="2.5"/>
+        <ellipse cx="27" cy="80" rx="32" ry="26" fill="none" stroke="#173D35" stroke-width="2.5"/>
+        <ellipse cx="27" cy="58" rx="26" ry="21" fill="none" stroke="#173D35" stroke-width="2.5"/>
+        <ellipse cx="27" cy="38" rx="19" ry="17" fill="none" stroke="#173D35" stroke-width="2.5"/>
+        <path d="M18 63 Q27 54 36 63" stroke="#173D35" stroke-width="1.5" fill="none"/>
+        <path d="M13 78 Q27 69 41 78" stroke="#173D35" stroke-width="1.5" fill="none"/>
+      </g>
+
+      <!-- Fungo -->
+      <g transform="translate(195,320)">
+        <rect x="14" y="28" width="12" height="22" rx="3" fill="none" stroke="#173D35" stroke-width="2"/>
+        <path d="M4 30 Q20 4 36 30Z" fill="none" stroke="#173D35" stroke-width="2.5"/>
+        <circle cx="16" cy="18" r="3.5" fill="none" stroke="#173D35" stroke-width="1.5"/>
+        <circle cx="24" cy="13" r="3" fill="none" stroke="#173D35" stroke-width="1.5"/>
+        <circle cx="28" cy="20" r="3" fill="none" stroke="#173D35" stroke-width="1.5"/>
+      </g>
+
+      <!-- Fiore 1 (margherita) -->
+      <g transform="translate(315,298)">
+        <line x1="14" y1="20" x2="14" y2="62" stroke="#173D35" stroke-width="2.5"/>
+        <circle cx="14" cy="10" r="6" fill="none" stroke="#173D35" stroke-width="2"/>
+        <ellipse cx="14" cy="-3" rx="5" ry="9" fill="none" stroke="#173D35" stroke-width="1.5"/>
+        <ellipse cx="14" cy="-3" rx="5" ry="9" fill="none" stroke="#173D35" stroke-width="1.5" transform="rotate(45,14,10)"/>
+        <ellipse cx="14" cy="-3" rx="5" ry="9" fill="none" stroke="#173D35" stroke-width="1.5" transform="rotate(90,14,10)"/>
+        <ellipse cx="14" cy="-3" rx="5" ry="9" fill="none" stroke="#173D35" stroke-width="1.5" transform="rotate(135,14,10)"/>
+        <ellipse cx="14" cy="-3" rx="5" ry="9" fill="none" stroke="#173D35" stroke-width="1.5" transform="rotate(180,14,10)"/>
+        <ellipse cx="14" cy="-3" rx="5" ry="9" fill="none" stroke="#173D35" stroke-width="1.5" transform="rotate(225,14,10)"/>
+        <ellipse cx="14" cy="-3" rx="5" ry="9" fill="none" stroke="#173D35" stroke-width="1.5" transform="rotate(270,14,10)"/>
+        <ellipse cx="14" cy="-3" rx="5" ry="9" fill="none" stroke="#173D35" stroke-width="1.5" transform="rotate(315,14,10)"/>
+        <path d="M14 42 Q22 36 28 40" stroke="#173D35" stroke-width="1.5" fill="none"/>
+      </g>
+
+      <!-- Fiore 2 (tulipano) -->
+      <g transform="translate(450,274)">
+        <line x1="16" y1="26" x2="16" y2="70" stroke="#173D35" stroke-width="2.5"/>
+        <path d="M5 26 Q10 5 16 0 Q22 5 27 26 Q22 32 16 32 Q10 32 5 26Z" fill="none" stroke="#173D35" stroke-width="2"/>
+        <path d="M16 50 Q26 43 32 47" stroke="#173D35" stroke-width="1.5" fill="none"/>
+      </g>
+
+      <!-- Fiore 3 (a 6 petali) -->
+      <g transform="translate(570,310)">
+        <line x1="16" y1="20" x2="16" y2="58" stroke="#173D35" stroke-width="2.5"/>
+        <circle cx="16" cy="10" r="5" fill="none" stroke="#173D35" stroke-width="2"/>
+        <ellipse cx="16" cy="-2" rx="6" ry="10" fill="none" stroke="#173D35" stroke-width="1.5"/>
+        <ellipse cx="16" cy="-2" rx="6" ry="10" fill="none" stroke="#173D35" stroke-width="1.5" transform="rotate(60,16,10)"/>
+        <ellipse cx="16" cy="-2" rx="6" ry="10" fill="none" stroke="#173D35" stroke-width="1.5" transform="rotate(120,16,10)"/>
+        <ellipse cx="16" cy="-2" rx="6" ry="10" fill="none" stroke="#173D35" stroke-width="1.5" transform="rotate(180,16,10)"/>
+        <ellipse cx="16" cy="-2" rx="6" ry="10" fill="none" stroke="#173D35" stroke-width="1.5" transform="rotate(240,16,10)"/>
+        <ellipse cx="16" cy="-2" rx="6" ry="10" fill="none" stroke="#173D35" stroke-width="1.5" transform="rotate(300,16,10)"/>
+      </g>
+
+      <!-- Farfalla -->
+      <g transform="translate(148,225)">
+        <path d="M14 18 Q0 4 4 18 Q0 32 14 18Z" fill="none" stroke="#173D35" stroke-width="2"/>
+        <path d="M14 18 Q28 4 24 18 Q28 32 14 18Z" fill="none" stroke="#173D35" stroke-width="2"/>
+        <ellipse cx="14" cy="18" rx="2.5" ry="7" fill="none" stroke="#173D35" stroke-width="1.5"/>
+        <path d="M13 11 Q8 4 5 1" stroke="#173D35" stroke-width="1.5" fill="none"/>
+        <path d="M15 11 Q20 4 23 1" stroke="#173D35" stroke-width="1.5" fill="none"/>
+        <circle cx="5" cy="1" r="2" fill="#173D35"/>
+        <circle cx="23" cy="1" r="2" fill="#173D35"/>
+      </g>
+
+      <!-- Riccio -->
+      <g transform="translate(634,358)">
+        <ellipse cx="34" cy="28" rx="31" ry="20" fill="none" stroke="#173D35" stroke-width="2.5"/>
+        <path d="M24 10 L19 1" stroke="#173D35" stroke-width="2" stroke-linecap="round"/>
+        <path d="M34 8 L31 0" stroke="#173D35" stroke-width="2" stroke-linecap="round"/>
+        <path d="M44 11 L47 2" stroke="#173D35" stroke-width="2" stroke-linecap="round"/>
+        <path d="M54 18 L59 11" stroke="#173D35" stroke-width="2" stroke-linecap="round"/>
+        <path d="M14 19 L7 13" stroke="#173D35" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="13" cy="27" r="3" fill="#173D35"/>
+        <ellipse cx="8" cy="31" rx="4" ry="3" fill="none" stroke="#173D35" stroke-width="1.5"/>
+        <path d="M8 34 Q13 39 19 34" stroke="#173D35" stroke-width="1.5" fill="none"/>
+        <line x1="20" y1="47" x2="18" y2="57" stroke="#173D35" stroke-width="2" stroke-linecap="round"/>
+        <line x1="30" y1="49" x2="29" y2="59" stroke="#173D35" stroke-width="2" stroke-linecap="round"/>
+        <line x1="44" y1="48" x2="43" y2="58" stroke="#173D35" stroke-width="2" stroke-linecap="round"/>
+      </g>
+
+      <!-- Fili d'erba -->
+      <g stroke="#173D35" stroke-width="2" fill="none" stroke-linecap="round">
+        <path d="M268 364 L266 351 M274 364 L277 348 M280 364 L277 355"/>
+        <path d="M495 350 L493 338 M501 350 L504 335 M507 350 L504 343"/>
+        <path d="M700 378 L698 365 M706 378 L709 362 M712 378 L709 370"/>
+      </g>
+
+      <!-- Spazio libero (tratteggio invito) -->
+      <rect x="560" y="155" width="148" height="95" rx="10"
+            fill="none" stroke="#173D35" stroke-width="1.5" stroke-dasharray="6,4"/>
+      <text x="634" y="196" font-family="'DM Sans',sans-serif" font-size="10"
+            fill="#173D35" text-anchor="middle" opacity=".55">Aggiungi</text>
+      <text x="634" y="210" font-family="'DM Sans',sans-serif" font-size="10"
+            fill="#173D35" text-anchor="middle" opacity=".55">qualcosa!</text>
+      <path d="M610 175 L620 175 M615 170 L615 180" stroke="#173D35" stroke-width="1.5" opacity=".4" stroke-linecap="round"/>
+
+      <!-- LUPINO (grande, angolo in basso a sinistra) -->
+      <g transform="translate(24,332) scale(1.38)">
+        <ellipse cx="27" cy="58" rx="20" ry="21" fill="#E95A2B" stroke="#173D35" stroke-width="2"/>
+        <path d="M10 56 Q27 45 44 56 L44 80 Q27 88 10 80Z" fill="#39734B" stroke="#173D35" stroke-width="1.5"/>
+        <line x1="19" y1="56" x2="21" y2="46" stroke="#173D35" stroke-width="1.5"/>
+        <line x1="35" y1="56" x2="33" y2="46" stroke="#173D35" stroke-width="1.5"/>
+        <circle cx="27" cy="32" r="21" fill="#E95A2B" stroke="#173D35" stroke-width="2"/>
+        <polygon points="10,20 4,5 19,18" fill="#E95A2B" stroke="#173D35" stroke-width="2"/>
+        <polygon points="44,20 50,5 35,18" fill="#E95A2B" stroke="#173D35" stroke-width="2"/>
+        <polygon points="11,19 7,9 18,17" fill="#F78FB3"/>
+        <polygon points="43,19 47,9 36,17" fill="#F78FB3"/>
+        <ellipse cx="27" cy="39" rx="11" ry="8" fill="#F8F1E4" stroke="#173D35" stroke-width="1.5"/>
+        <circle cx="18" cy="27" r="4.5" fill="#173D35"/>
+        <circle cx="36" cy="27" r="4.5" fill="#173D35"/>
+        <circle cx="19.5" cy="25.5" r="1.5" fill="white"/>
+        <circle cx="37.5" cy="25.5" r="1.5" fill="white"/>
+        <ellipse cx="27" cy="35" rx="3" ry="2.5" fill="#173D35"/>
+        <path d="M21 42 Q27 48 33 42" stroke="#173D35" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <ellipse cx="27" cy="14" rx="23" ry="5" fill="#39734B" stroke="#173D35" stroke-width="1.5"/>
+        <rect x="12" y="4" width="30" height="13" rx="6" fill="#39734B" stroke="#173D35" stroke-width="1.5"/>
+        <rect x="12" y="12" width="30" height="5" fill="#F2BD36"/>
+        <!-- Pennello -->
+        <line x1="47" y1="60" x2="68" y2="40" stroke="#173D35" stroke-width="2.5" stroke-linecap="round"/>
+        <rect x="60" y="29" width="12" height="24" rx="3" fill="#F8F1E4" stroke="#173D35" stroke-width="2" transform="rotate(-45,66,41)"/>
+        <path d="M76 32 Q80 26 78 35" fill="#F2BD36" stroke="#173D35" stroke-width="1.5"/>
+        <!-- Fumetto -->
+        <path d="M80 18 Q118 4 148 18 Q158 28 148 40 Q118 52 82 40 Q73 33 80 18Z"
+              fill="white" stroke="#173D35" stroke-width="1.5"/>
+        <path d="M82 39 L70 51 L85 41" fill="white" stroke="#173D35" stroke-width="1.5"/>
+        <text x="115" y="32" font-family="'Bricolage Grotesque',sans-serif"
+              font-size="9" font-weight="700" fill="#173D35" text-anchor="middle">Colora!</text>
+      </g>
+    </svg>
+  </div>
+
+  <!-- CONSIGNA -->
+  <div class="consigna">
+    <svg class="consigna-icon" viewBox="0 0 30 30" fill="none">
+      <circle cx="15" cy="15" r="14" fill="#F2BD36" stroke="#173D35" stroke-width="2"/>
+      <circle cx="10" cy="13" r="2.5" fill="#173D35"/>
+      <circle cx="20" cy="13" r="2.5" fill="#173D35"/>
+      <path d="M9 19 Q15 25 21 19" stroke="#173D35" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </svg>
+    <p class="consigna-text">Quali colori scegli oggi? Colora, aggiungi dettagli e inventa qualcosa di tutto tuo.</p>
+  </div>
+
+  <!-- VARIANTI -->
+  <div class="variants">
+    <div>
+      <span class="v-age">3 anni</span>
+      <span class="v-desc">Esplora i colori liberamente e fai tanti tratti su cielo e prato.</span>
+    </div>
+    <div>
+      <span class="v-age">4 anni</span>
+      <span class="v-desc">Aggiungi dettagli: nuovi fiori, un animale o una casa sullo sfondo.</span>
+    </div>
+    <div>
+      <span class="v-age">5 anni</span>
+      <span class="v-desc">Inventa una piccola storia su quello che vedi e raccontala ad alta voce.</span>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <span>Mente in Gioco™ — 30 giorni di gioco creativo</span>
+    <span>Attività 1 di 3 · Pilota</span>
+  </div>
+
+</div>
+</body>
+</html>

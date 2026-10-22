@@ -1,7 +1,7 @@
 # Piloto — 3 attività creative · Mente in Gioco™
 
 **Rama:** `pilot/creative-activities-v1`  
-**Estado:** ⏳ En preparación — aún sin fichas producidas  
+**Estado:** ✅ Fichas producidas — pendiente revisión Noemí  
 **Aprobación requerida:** Pull Request a `main` solo con OK explícito de Noemí
 
 ---
@@ -59,11 +59,11 @@ pilot/
 
 | Ficha | Estado |
 |-------|--------|
-| Ficha 1 — Il mio mondo di colori | ⏳ Pendiente |
-| Ficha 2 — Da una macchia a una storia | ⏳ Pendiente |
-| Ficha 3 — La casa delle forme | ⏳ Pendiente |
-| Guía para adultos | ⏳ Pendiente |
-| Guía visual | ⏳ Pendiente |
+| Ficha 1 — Il mio mondo di colori | ✅ Listo |
+| Ficha 2 — Da una macchia a una storia | ✅ Listo |
+| Ficha 3 — La casa delle forme | ✅ Listo |
+| Guida adulti | ✅ Listo |
+| Guida visiva | ✅ Listo |
 
 ---
 
