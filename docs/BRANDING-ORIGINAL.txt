@@ -1,0 +1,325 @@
+================================================================================
+BRANDBOOK Y GUÍA DE ESTILO VISUAL — MENTE IN GIOCO
+================================================================================
+
+Producto:   Mente in Gioco™ — Il metodo a piccoli passi per allenare l'attenzione
+Mercado:    🇮🇹 Italia · italiano
+Objetivo:   Que se vea que hay un CAMINO y que se avanza por él. El villano es el
+            estímulo que no lleva a ningún lado: la pantalla da premio sin avance.
+            La página tiene que dar la sensación contraria — cada scroll es un paso.
+
+--------------------------------------------------------------------------------
+CONCEPTO RECTOR — « Il tabellone dei progressi »
+--------------------------------------------------------------------------------
+
+El tablero de un juego de mesa desplegado sobre la mesa de la cocina. Táctil,
+cálido, progresivo y ordenado. El mecanismo del producto es un camino de 30 días,
+así que el territorio ES el camino: las casillas numeradas recorren la página de
+arriba abajo y el color dice en qué tramo del camino estás.
+
+Se aparta de tres cosas, explícitamente:
+  · el pastel lavado de guardería (el default del nicho, el que hace que
+    Neurocarte se vea artificial y desalineado);
+  · las tarjetas blancas redondeadas con ícono lineal de cualquier landing de
+    curso;
+  · el neón y el plástico brillante de las apps infantiles — que es el villano.
+
+Referencia mental: un tablero de la oca de cartón grueso abierto sobre la mesa,
+con fichas de madera y estrellitas doradas pegadas en las casillas ya jugadas.
+
+La decisión que hace la diferencia: EL COLOR DE ACENTO CAMBIA POR SECCIÓN, porque
+el color dice en qué nivel del camino estás. Está prohibido resolver la página
+entera con un solo color de acento (el error registrado de Petit Génie: todo
+amarillo, hasta el botón de compra). Y el dorado aparece UNA sola vez por sección:
+es la estrella de la casilla completada, no un color de relleno.
+
+
+================================================================================
+1. PALETA DE COLORES
+================================================================================
+
+--- BASE ----------------------------------------------------------------------
+
+#FBF7EE   Fondo base. Papel crema con grano. Nunca blanco puro: siempre con una
+          insinuación de amarillo de papel.
+#F3EADA   Fondo alterno. Un escalón más tostado. Secciones pares.
+#17494A   Fondo tablero. Verde azulado profundo. SOLO dos veces en toda la
+          página (sección firma y oferta). No es un "modo oscuro": es el tablero
+          desplegado sobre la mesa.
+#FFFFFF   Superficie de tarjeta. SIEMPRE un escalón más clara que el fondo,
+          nunca al revés. Sobre tablero sube a #1E5A5B, misma regla.
+#E0D3BE   Borde. 2 px, no 1: es canto de cartulina, no una línea gris de UI.
+
+--- ACENTOS -------------------------------------------------------------------
+
+#E8692F   ACENTO PRINCIPAL — mandarina. Todos los botones de la página. Si algo
+          es mandarina, se clickea.
+#C4511F   El mismo, oscurecido: borde inferior del botón (3 px) y hover.
+#C9A227   ACENTO DE VALOR, ESCASO A PROPÓSITO — dorado estrella. UNA sola vez
+          por sección, nunca dos: el precio final, la cifra de ahorro, la
+          estrella de la casilla completada. NUNCA texto corrido. NUNCA un botón.
+
+--- TINTAS DE SECCIÓN (rol semántico fijo) ------------------------------------
+
+Orden canónico, siempre en este orden — es la progresión del camino:
+
+#E8692F   Nivel 1 · Focus & Concentrazione        (mandarina)
+#F2B33D   Nivel 2 · Emozioni & Autostima          (amarillo sol)
+#5C9E5A   Nivel 3 · Piano Guida 30 Giorni         (verde manzana)
+
+Cada entregable, cada bono y cada sección toma el color de su nivel en la banda
+superior de 6 px y en el círculo de su número.
+
+--- TEXTO ---------------------------------------------------------------------
+
+#1F2A2A   Títulos. Tinta con verde adentro, nunca negro puro.
+#3D4A49   Cuerpo.
+#7A6A54   Etiquetas, pies de foto, secundario. Sepia claro.
+
+--- SEÑALIZACIÓN --------------------------------------------------------------
+
+#B3382C   Rojo de advertencia. Distinto del mandarina. Solo señalización real
+          (qué NO es el producto, la condición de la garantía). Jamás decorativo,
+          jamás urgencia.
+
+--- REGLA CLARO / OSCURO ------------------------------------------------------
+
+En las dos secciones de tablero el acento NO cambia: mandarina, amarillo, verde
+y dorado se mantienen idénticos. Lo que se invierte es el fondo (#17494A) y el
+texto (#FBF7EE). La tarjeta sigue siendo un escalón más clara que su fondo.
+
+
+================================================================================
+2. TIPOGRAFÍA
+================================================================================
+
+Dos familias, nunca tres.
+
+TÍTULOS    Baloo 2 — 700. Redondeada y cálida pero con esqueleto legible: no es
+           Poppins (geométrica fría, el default) ni una tipo caricatura. Resuelve
+           bien las diacríticas italianas (à è é ì ò ù) sin recortes.
+CUERPO     Nunito — 400 / 600. Hermana redondeada de Baloo sin competirle; muy
+           legible en párrafos cortos en móvil, que es el 80-95 % del tráfico.
+ETIQUETAS  Nunito 600 · MAYÚSCULAS · 11-12 px · letter-spacing 0.10em · #7A6A54
+NÚMEROS    Baloo 2 700, tabular. Los números de casilla van SIEMPRE dentro de un
+           círculo del color de su nivel: el número ES la casilla. La cifra clave
+           (precio / ahorro) va grande y en dorado, única de ese color en su pieza.
+
+Por qué NO hay una tercera familia manuscrita: la textura de mano entra por las
+ILUSTRACIONES (trazo de crayón dentro de las imágenes), no por una webfont. Dos
+familias, cero excepciones, y una fuente menos que cargar en móvil.
+
+JERARQUÍA DE UNA PÁGINA
+  H1        Baloo 2 700 · 44-56 px · #1F2A2A · minúscula de frase
+  H2        Baloo 2 700 · 30-36 px · #1F2A2A
+  H3        Baloo 2 700 · 20-22 px · #1F2A2A
+  Cuerpo    Nunito 400 · 17-18 px · #3D4A49 · interlineado 1.65
+  Etiqueta  Nunito 600 · 11 px · MAYÚS · 0.10em · #7A6A54
+  Cifra     Baloo 2 700 · 64-96 px · #C9A227 · una por pieza
+
+
+================================================================================
+3. ELEMENTOS GRÁFICOS E ICONOGRAFÍA
+================================================================================
+
+--- EL MOTIVO DE MARCA --------------------------------------------------------
+
+EL CAMINO DE CASILLAS: una línea punteada que serpentea con círculos numerados.
+Aparece en:
+  1. Separador entre secciones — un tramo de 3-4 casillas que conecta una sección
+     con la siguiente. El scroll ES el camino.
+  2. Banda superior de 6 px en cada tarjeta de entregable y de bono, con el color
+     de su nivel.
+  3. Marca de agua tenue (#E0D3BE al 20 %) en el fondo de las secciones de tablero.
+  4. Emblema en círculo: Gino parado en la casilla 1 — favicon y sello del PDF de
+     bienvenida.
+
+--- LA MASCOTA: «GINO» ---------------------------------------------------------
+
+Una ficha de juego de madera (peón redondeado, veta visible) con dos ojitos y
+nada más. NO es un cerebro con cara: el cerebro con cara es el default de todo el
+nicho (NeuroKids y Neurocarte lo usan los dos). Gino es la ficha que avanza por el
+tablero — nace del territorio, no de la categoría, y por eso es nuestro.
+
+Aparece exactamente tres veces en la landing:
+  1. en el logo, arriba, a color;
+  2. en el hero, arrancando el camino;
+  3. en el CTA final, llegando a la casilla 30.
+
+--- ICONOGRAFÍA ----------------------------------------------------------------
+
+Cero íconos lineales de dos tonos. Cero emojis. En su lugar: EL NÚMERO DE CASILLA
+DENTRO DEL CÍRCULO DE COLOR. Cada beneficio, cada paso y cada entregable se señala
+con su número en su color — porque el producto es un camino numerado y el número
+dice dónde estás. Cuando hace falta un pictograma en vez de un número, va
+ilustrado a crayón, nunca vectorial plano.
+
+--- REGLAS DURAS ---------------------------------------------------------------
+
+  · Sombras: cero sombras difusas. La única permitida es la sombra dura de papel
+    apoyado — desplazada 3 px abajo/derecha, blur 0, color #D9C9B0. Es papel sobre
+    la mesa, no una card flotando.
+  · Degradados: cero. La profundidad la dan el color del nivel y la superposición
+    de papel.
+  · Radio de tarjeta: 14 px. Radio de botón: píldora completa — el botón es una
+    ficha de juego, y es el único elemento totalmente redondo de la página.
+  · Los mockups se apoyan, no levitan. Nunca reflejo, nunca sobre degradado.
+  · Un solo elemento dorado por sección.
+  · El acento CAMBIA por sección según el nivel. Prohibido resolver la página
+    entera con un solo color de acento.
+
+
+================================================================================
+4. ESTRUCTURA Y COMPOSICIÓN DE PÁGINA
+================================================================================
+
+--- RITMO DE LA LANDING --------------------------------------------------------
+
+   1. hero ..................... papel crema #FBF7EE
+   2. dolores (4) .............. papel tostado #F3EADA
+   3. beneficios (6) ........... papel crema
+   4. solución + foto .......... papel crema
+   5. FIRMA «Il Tabellone dei 30 Giorni» ... ◼ tablero #17494A
+   6. cómo funciona (3 pasos) .. papel tostado
+   7. entregables .............. papel crema
+   8. vistazo de producto ...... papel tostado
+   9. bonos .................... papel crema
+  10. testimonios ............. papel tostado
+  11. oferta .................. ◼ tablero #17494A
+  12. reviews ................. papel crema
+  13. garantía ................ papel tostado
+  14. FAQ ..................... papel crema
+  15. CTA final ............... papel crema, con el camino llegando a la casilla 30
+
+Solo DOS bloques a sangre en toda la página: la firma y la oferta. El CTA final
+se queda en claro a propósito — cierra con Gino llegando, no con otro bloque
+oscuro que le robaría fuerza a la oferta.
+
+--- LA SECCIÓN FIRMA: «IL TABELLONE DEI 30 GIORNI» -----------------------------
+
+El tablero completo, con las 30 casillas visibles, mostrando qué ficha toca cada
+día y cómo sube la dificultad tramo a tramo (mandarina → amarillo → verde). Nace
+del mecanismo único (el Piano Guida) y es lo único que ningún competidor del
+nicho puede mostrar, porque ninguno tiene plan guiado. Si se saca, la página
+pierde exactamente aquello que la diferencia.
+
+--- FORMATOS Y SUS USOS --------------------------------------------------------
+
+  16:9   hero · mecanismo · sección firma
+  1:1    cada entregable (3) · cada bono (3)
+  4:5    las 10 páginas del vistazo de producto
+  9:16   los 7 testimonios (capturas de WhatsApp)
+
+  No hay foto de experta: este producto no lleva vocera (decisión de Fase 0).
+
+--- EL VISTAZO DE PRODUCTO (4:5) -----------------------------------------------
+
+⚠️ Lo que se dibuje acá OBLIGA al producto real: el tipo de artefacto, los números
+anunciados y la promesa funcional. La estética no obliga.
+
+Página A4 vertical, plana, vista de frente, sobre fondo crema. Borde de cartulina
+2 px #E0D3BE, sin sombra. Banda de color del nivel de 6 px arriba. Número de
+casilla dentro de un círculo en la esquina superior derecha. Muestra la actividad
+dibujada a crayón — laberintos, secuencias, pares, tracciati — nunca una captura
+de software.
+
+--- LOS MOCKUPS (1:1) ----------------------------------------------------------
+
+El objeto es siempre papel impreso: un fajo de hojas A4 apoyado en mesa de madera
+clara, una carpeta de cartón con las fichas adentro, una hoja a medio completar
+con lápices al lado. Luz natural suave desde arriba a la izquierda, sombra de
+contacto corta. Nunca una tablet, nunca una pantalla: el producto es exactamente
+lo que la pantalla no es.
+
+REGLA HEREDADA DEL BARRIDO DE LANDINGS: cada mockup muestra una pieza
+IDENTIFICABLE — la de concentración, la de emociones, el plan de 30 días — nunca
+una pila genérica de PDFs apilados. Que se vea qué se compra.
+
+
+================================================================================
+5. TONO DE COMUNICACIÓN
+================================================================================
+
+Tú («tu» italiano). Cómplice, concreto, tranquilo. Frases cortas.
+
+SE DICE                                  NO SE DICE
+  «alle 17, quando tocca fare i compiti»   «migliora le capacità cognitive»
+  «finisce quello che inizia»              «sviluppa il suo potenziale»
+  «10 minuti al giorno»                    «in poco tempo»
+  «lo so, l'hai già sentito»               la solemnidad del folleto
+  el momento concreto del día              el verbo de catálogo: scopri, domina
+
+Emojis: cero en la landing. En los creativos, con moderación.
+Nunca prometer un resultado que dependa del chico. Nunca hablarle como paciente
+ni nombrar un diagnóstico: ADHD/DSA se mencionan una sola vez, y solo para decir
+que esto NO los reemplaza.
+
+
+================================================================================
+6. PROMPT BASE PARA GENERACIÓN DE IMÁGENES
+================================================================================
+
+Dos recetas. Se copian tal cual y solo se cambia la línea PIECE.
+
+--- 6.A · MOCKUPS (1:1) — objetos fotografiados ---------------------------------
+
+  Square 1:1 product photograph, shot slightly from above at a 30-degree angle.
+
+  PIECE: [el objeto: a stack of printed A4 activity sheets, the top one half
+  completed in coloured pencil, resting on a light oak kitchen table].
+
+  Surface: light oak table, visible wood grain. Around the object: a few wooden
+  colouring pencils in tangerine, warm yellow and apple green, and one small
+  rounded wooden game pawn. Light: soft diffused daylight from the upper left,
+  gentle natural contact shadow only where the object touches the table.
+  Background colour: #FBF7EE, uncluttered, generous margin.
+
+  The paper looks real: matte stock, visible grain, edges slightly curled. The
+  object RESTS on the surface — it does not float, has no drop shadow behind it,
+  and sits on no gradient. Photorealistic, warm and slightly desaturated grading.
+  No screens, no tablets, no people, no hands, no text overlays outside the object.
+
+--- 6.B · PANTALLAS DEL VISTAZO (4:5) — hojas planas -----------------------------
+
+  Vertical 4:5 flat mockup of a single A4 sheet, straight-on, no perspective, no
+  device frame.
+
+  PIECE: [la actividad: a maze activity sheet where a small wooden pawn must reach
+  a star, drawn for a 6-year-old].
+
+  The activity is drawn in a hand-made children's illustration style: crayon
+  stroke with visible texture, colour filled inside the shapes, never flat vector.
+  Palette strictly: tangerine #E8692F, warm yellow #F2B33D, apple green #5C9E5A,
+  deep teal #17494A on cream paper #FBF7EE.
+
+  A 6px colour band runs along the top edge of the sheet. Top right corner: a
+  numbered circle in the band's colour. Page background: #FBF7EE. The sheet sits
+  on it with a 2px border #E0D3BE and NO shadow.
+
+  Flat, crisp, no gradients, no glow, no 3D, no perspective, no pastel wash, no
+  people. Keep lettering minimal and non-legible — all real copy is set in HTML.
+
+⚠️ Todo el texto visible de las imágenes va en ITALIANO y se proofrea pieza por
+pieza. Ante la duda, que la pieza no lleve texto.
+
+
+================================================================================
+7. APLICACIÓN RÁPIDA — REFERENCIA DE UN VISTAZO
+================================================================================
+
+  Fondo                 #FBF7EE (alterno #F3EADA) · tablero #17494A · nunca blanco
+  Tarjeta               #FFFFFF · borde #E0D3BE 2px · radio 14px · sombra dura
+                        3px abajo/derecha, blur 0, #D9C9B0
+  Botón                 fondo #E8692F · texto #FBF7EE · píldora · borde inferior
+                        3px #C4511F
+  Cifra clave           #C9A227 · Baloo 2 700 · UNA por sección
+  Títulos               Baloo 2 700 · #1F2A2A
+  Cuerpo                Nunito 400 · 17-18px · #3D4A49 · line-height 1.65
+  Etiqueta              Nunito 600 · 11px · MAYÚS · 0.10em · #7A6A54
+  Niveles               1 mandarina #E8692F · 2 amarillo #F2B33D · 3 verde #5C9E5A
+  Motivo                el camino de casillas numeradas + Gino (3 apariciones)
+  Secciones a sangre    solo dos: la firma (tabellone) y la oferta
+  Prohibido             blanco puro · degradados · sombras difusas · íconos
+                        lineales de dos tonos · emojis · un solo color de acento
+                        en toda la página · pastel lavado · mockups flotando ·
+                        pilas genéricas de PDFs · cerebro con cara
