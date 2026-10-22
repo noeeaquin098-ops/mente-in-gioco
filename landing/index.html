@@ -401,48 +401,6 @@ h1, h2, h3, .title-font { font-family: 'Baloo 2', cursive; font-weight: 700; }
 }
 @media (max-width: 600px) { .bonos-grid { grid-template-columns: 1fr; } }
 
-/* ===== TESTIMONIANZE ===== */
-#testimonianze { padding: 60px 0; background: var(--cream-alt); }
-#testimonianze h2 { font-size: clamp(1.4rem, 3.5vw, 1.85rem); color: var(--text-dark); margin-bottom: 36px; }
-.testimonianze-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-}
-.testimonio-card { padding: 0; overflow: hidden; }
-.wa-header {
-  background: #25D366;
-  padding: 10px 14px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.wa-avatar {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.25);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  color: #fff;
-}
-.wa-name { font-size: 0.9rem; font-weight: 700; color: #fff; font-family: 'Nunito', sans-serif; }
-.wa-status { font-size: 0.75rem; color: rgba(255,255,255,0.8); }
-.wa-body { padding: 14px; background: #E8FDD8; }
-.wa-bubble {
-  background: #fff;
-  border-radius: 0 10px 10px 10px;
-  padding: 10px 14px;
-  font-size: 0.88rem;
-  line-height: 1.55;
-  color: #1a1a1a;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
-.wa-time { text-align: right; font-size: 0.75rem; color: #888; margin-top: 4px; }
-@media (max-width: 560px) { .testimonianze-grid { grid-template-columns: 1fr; } }
-
 /* ===== OFERTA ===== */
 #vg-oferta {
   padding: 60px 0;
@@ -492,16 +450,6 @@ h1, h2, h3, .title-font { font-family: 'Baloo 2', cursive; font-weight: 700; }
   margin-left: 8px;
 }
 .oferta-note { text-align: center; font-size: 0.82rem; opacity: 0.65; margin-top: 16px; }
-
-/* ===== REVIEWS ===== */
-#reviews { padding: 52px 0; background: var(--cream); }
-#reviews h2 { font-size: clamp(1.3rem, 3vw, 1.65rem); color: var(--text-dark); margin-bottom: 32px; }
-.reviews-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
-.review-card { padding: 20px 18px; }
-.stars { color: var(--dorado); font-size: 1rem; margin-bottom: 10px; letter-spacing: 2px; }
-.review-card p { font-size: 0.92rem; line-height: 1.55; color: var(--text-body); margin-bottom: 10px; }
-.review-author { font-size: 0.82rem; color: var(--text-body); opacity: 0.7; }
-@media (max-width: 560px) { .reviews-grid { grid-template-columns: 1fr; } }
 
 /* ===== GARANZIA ===== */
 #garanzia { padding: 52px 0; background: var(--cream-alt); }
@@ -756,7 +704,7 @@ body{font-family:'DM Sans',sans-serif;font-size:17px;line-height:1.58}h1,h2,h3,.
       <div class="soluzione-text">
         <p>Non è che tuo figlio «non sa stare concentrato». È che tutto l'ambiente intorno a lui è progettato per la ricompensa immediata — e il suo cervello ha imparato a funzionare in quel modo.</p>
         <p><strong>Mente in Gioco™ inverte quell'ordine.</strong> Attività brevi, senza nessuna ricompensa automatica: il bambino deve finire per vedere il risultato. Ogni attività è un pochino più lunga della precedente. Non un salto — un passo.</p>
-        <p>In 30 giorni, il muscolo dell'attenzione si allena. Non in teoria: lo vedi nei minuti che riesce a stare seduto, nell'attività che finisce da solo.</p>
+        <p>Il percorso propone piccoli passi progressivi. Ogni bambino ha tempi diversi: il diario aiuta a osservare ciò che succede, senza aspettarsi risultati uguali per tutti.</p>
       </div>
       <div class="soluzione-image">
         <img src="img/soluzione_11.png" alt="Attività stampata con matite colorate, senza schermo" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
@@ -857,7 +805,7 @@ body{font-family:'DM Sans',sans-serif;font-size:17px;line-height:1.58}h1,h2,h3,.
           <img src="img/e2_11.png" alt="Pacchetto Emozioni e Autostima" style="width:100%;height:100%;object-fit:cover;border-radius:10px;">
         </div>
         <h3>Pacchetto Emozioni & Autostima</h3>
-        <p>+50 attività per riconoscere le emozioni, gestire la frustrazione e festeggiare i piccoli progressi. Schede «Oggi ho riuscito a…» per costruire fiducia giorno per giorno.</p>
+        <p>+50 attività per riconoscere le emozioni, gestire la frustrazione e festeggiare i piccoli progressi. Schede per riconoscere i tentativi e i piccoli progressi, con frasi semplici e naturali in italiano.</p>
         <div class="entregable-price"><s>7,90 €</s> <strong>incluso</strong></div>
       </div>
     </div>
@@ -901,21 +849,21 @@ body{font-family:'DM Sans',sans-serif;font-size:17px;line-height:1.58}h1,h2,h3,.
         <div class="bono-image"><img src="img/b1_11.png" alt="Diario dei Progressi" style="width:100%;height:100%;object-fit:cover;border-radius:10px;"></div>
         <span class="bono-badge">Bonus 1</span>
         <h3>Diario dei Progressi</h3>
-        <p>Tracker settimanale da compilare: quanti minuti è rimasto concentrato, quante attività ha finito da solo. Rende visibile un progresso che altrimenti si nota solo «a occhio».</p>
+        <p>Un registro settimanale per annotare le attività proposte, il tipo di aiuto necessario e i piccoli passi osservati. Non è un test: serve a ricordare ciò che succede.</p>
         <p class="bono-objection">«Come faccio a sapere se sta funzionando?»</p>
       </div>
       <div class="bono-card card">
         <div class="bono-image"><img src="img/b2_11.png" alt="Guida Stampa Facile" style="width:100%;height:100%;object-fit:cover;border-radius:10px;"></div>
         <span class="bono-badge">Bonus 2</span>
         <h3>Guida Stampa Facile</h3>
-        <p>Una pagina che dice che carta usare, come ordinare le stampe in una cartellina, e come presentare il Piano al bambino il primo giorno. Tutto pronto in 5 minuti.</p>
+        <p>Una guida pratica per stampare, organizzare le schede e presentare il percorso al bambino con una consegna semplice.</p>
         <p class="bono-objection">«Non ho tempo di organizzare tutto questo»</p>
       </div>
       <div class="bono-card card">
         <div class="bono-image"><img src="img/b3_11.png" alt="Schede a Tema Stagionale" style="width:100%;height:100%;object-fit:cover;border-radius:10px;"></div>
         <span class="bono-badge">Bonus 3</span>
         <h3>10 Schede a Tema Stagionale</h3>
-        <p>Schede extra a tema (Halloween, Natale, Carnevale) da stampare quando il bambino chiede «qualcosa di nuovo». Stesso metodo, tema diverso — il interesse non si spegne.</p>
+        <p>Schede extra a tema (Halloween, Natale, Carnevale) da stampare quando il bambino chiede «qualcosa di nuovo». Stesso metodo, tema diverso — la curiosità può riaccendersi.</p>
         <p class="bono-objection">«Dopo due settimane si stanca e torna allo schermo»</p>
       </div>
     </div>
