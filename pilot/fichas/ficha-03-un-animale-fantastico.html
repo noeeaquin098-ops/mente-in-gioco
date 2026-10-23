@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ficha 3 — Un animale fantastico · Mente in Gioco™</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --cream:#F8F1E4;--dark:#173D35;--orange:#E95A2B;
+  --yellow:#F2BD36;--green:#39734B;--violet:#B57EDC;
+  --ink:#3D2B1A
+}
+body{
+  font-family:'DM Sans',sans-serif;
+  background:#6B4E8A;
+  display:flex;justify-content:center;
+  padding:28px;min-height:100vh
+}
+.page{
+  width:210mm;background:var(--cream);
+  padding:10mm 13mm 9mm;
+  display:flex;flex-direction:column;gap:3.5mm;
+  box-shadow:0 8px 40px rgba(0,0,0,.3)
+}
+.header{
+  background:var(--dark);border-radius:13px;
+  padding:4.5mm 7mm;
+  display:grid;grid-template-columns:auto 1fr 52px;
+  align-items:center;gap:5mm;min-height:19mm
+}
+.brand-block{display:flex;flex-direction:column;gap:1mm}
+.brand-name{
+  font-family:'Bricolage Grotesque',sans-serif;
+  font-size:10pt;font-weight:800;
+  color:var(--yellow);letter-spacing:.3px
+}
+.ficha-ref{
+  font-size:7pt;color:rgba(255,255,255,.6);
+  text-transform:uppercase;letter-spacing:1px
+}
+.ficha-title{
+  font-family:'Bricolage Grotesque',sans-serif;
+  font-size:17pt;font-weight:800;
+  color:#fff;text-align:center;line-height:1.1
+}
+.header-char{
+  width:52px;height:52px;object-fit:contain;
+  border-radius:8px;overflow:hidden
+}
+.canvas{
+  background:#fff;border-radius:10px;
+  border:2.5px solid var(--dark);
+  flex:1;display:flex;align-items:stretch;
+  min-height:148mm;overflow:hidden
+}
+.canvas svg{width:100%;height:100%;display:block}
+.consigna{
+  background:#fff;border:2px solid var(--violet);
+  border-radius:10px;padding:3.5mm 5mm;
+  display:flex;align-items:center;gap:4mm
+}
+.consigna-icon{width:28px;height:28px;flex-shrink:0}
+.consigna-text{
+  font-family:'Bricolage Grotesque',sans-serif;
+  font-weight:700;font-size:11.5pt;
+  color:var(--dark);line-height:1.35
+}
+.variants{
+  background:var(--dark);border-radius:9px;
+  padding:3mm 5mm;
+  display:grid;grid-template-columns:repeat(3,1fr);gap:3mm
+}
+.v-age{
+  font-size:7pt;font-weight:500;color:var(--violet);
+  text-transform:uppercase;letter-spacing:.8px;
+  margin-bottom:1.5mm;display:block
+}
+.v-desc{font-size:8pt;color:#fff;line-height:1.4}
+.footer{
+  display:flex;justify-content:space-between;padding:0 1mm
+}
+.footer span{font-size:7pt;color:var(--dark);opacity:.5}
+@media print{
+  *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+  body{background:none;padding:0;margin:0}
+  .page{box-shadow:none}
+  @page{size:A4;margin:0}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="brand-block">
+      <span class="brand-name">Mente in Gioco™</span>
+      <span class="ficha-ref">Attività 3 · 3–5 anni</span>
+    </div>
+    <div class="ficha-title">Un animale<br>fantastico</div>
+    <img class="header-char" src="../img/char-cubetto.png" alt="Cubetto">
+  </div>
+
+  <!-- CANVAS — animal creator: head given, child builds everything else -->
+  <div class="canvas">
+    <svg viewBox="0 0 740 535" xmlns="http://www.w3.org/2000/svg">
+      <rect width="740" height="535" fill="white"/>
+
+      <!-- TITLE AREA TOP + invito zona ambiente -->
+      <text x="370" y="34" font-family="'Bricolage Grotesque',sans-serif"
+            font-size="13" font-weight="800" fill="var(--ink)" text-anchor="middle" opacity=".65">Inventalo tu! Aggiungi tutto quello che manca...</text>
+
+      <!-- ZONA AMBIENTE in alto — invito a disegnare dove vive l'animale -->
+      <rect x="30" y="52" width="680" height="106" rx="12"
+            fill="none" stroke="var(--ink)" stroke-width="1.5" stroke-dasharray="7,5" opacity=".35"/>
+      <text x="370" y="96" font-family="'Bricolage Grotesque',sans-serif"
+            font-size="12" font-weight="700" fill="var(--ink)" text-anchor="middle" opacity=".3">Dove vive?</text>
+      <text x="370" y="114" font-family="'DM Sans',sans-serif"
+            font-size="9" fill="var(--ink)" text-anchor="middle" opacity=".25">Disegna il suo posto speciale: foresta, mare, montagna, spazio...</text>
+
+      <!-- TESTA dell'animale (disegnata, è il punto di partenza) -->
+      <!-- Corpo/forma della testa: ovale caldo -->
+      <ellipse cx="370" cy="146" rx="88" ry="78" fill="none" stroke="var(--ink)" stroke-width="3"/>
+      <!-- Texture capelli/piumaggio sulla sommità -->
+      <path d="M308 98 Q320 72 340 82 Q350 60 370 68 Q390 60 400 80 Q420 72 432 98"
+            fill="none" stroke="var(--ink)" stroke-width="2.2" stroke-linecap="round"/>
+      <!-- Orecchie — due forme, una più grande (cane?), una più piccola, possono essere completate -->
+      <!-- Orecchio sinistro — forma organica pendente -->
+      <path d="M284 128 Q268 110 272 148 Q276 178 290 188 Q304 196 308 174 Q294 160 284 128Z"
+            fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+      <!-- Orecchio destro -->
+      <path d="M456 128 Q472 110 468 148 Q464 178 450 188 Q436 196 432 174 Q446 160 456 128Z"
+            fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+      <!-- Occhi -->
+      <circle cx="334" cy="140" r="16" fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+      <circle cx="334" cy="140" r="9" fill="var(--ink)"/>
+      <circle cx="330" cy="136" r="3.5" fill="white"/>
+      <circle cx="406" cy="140" r="16" fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+      <circle cx="406" cy="140" r="9" fill="var(--ink)"/>
+      <circle cx="402" cy="136" r="3.5" fill="white"/>
+      <!-- Naso — morbido -->
+      <path d="M358 168 Q370 180 382 168 Q376 158 370 156 Q364 158 358 168Z"
+            fill="var(--ink)"/>
+      <!-- Bocca -->
+      <path d="M350 186 Q370 202 390 186" stroke="var(--ink)" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+      <!-- Baffi (tre per lato) -->
+      <line x1="290" y1="170" x2="350" y2="172" stroke="var(--ink)" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="290" y1="180" x2="350" y2="178" stroke="var(--ink)" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="390" y1="172" x2="450" y2="170" stroke="var(--ink)" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="390" y1="178" x2="450" y2="180" stroke="var(--ink)" stroke-width="1.8" stroke-linecap="round"/>
+
+      <!-- Badge "La testa è pronta!" -->
+      <rect x="470" y="108" width="140" height="36" rx="10" fill="var(--dark)"/>
+      <text x="540" y="124" font-family="'Bricolage Grotesque',sans-serif" font-size="9"
+            font-weight="700" fill="white" text-anchor="middle">La testa</text>
+      <text x="540" y="136" font-family="'Bricolage Grotesque',sans-serif" font-size="9"
+            font-weight="700" fill="var(--yellow)" text-anchor="middle">è pronta! ✓</text>
+      <!-- freccia verso la testa -->
+      <path d="M470 126 L460 148 L456 136 L448 138 L456 148" fill="var(--dark)" stroke="none"/>
+
+      <!-- CORPO — grande zona vuota tratteggiata, organica -->
+      <path d="M280 246 Q256 264 248 310 Q240 358 252 400 Q266 438 310 452 Q348 464 370 464 Q392 464 430 452 Q474 438 488 400 Q500 358 492 310 Q484 264 460 246 Q420 230 370 228 Q320 228 280 246Z"
+            fill="none" stroke="var(--ink)" stroke-width="2.5" stroke-dasharray="9,6"/>
+      <text x="370" y="340" font-family="'Bricolage Grotesque',sans-serif"
+            font-size="15" font-weight="800" fill="var(--ink)" text-anchor="middle" opacity=".3">Il corpo</text>
+      <text x="370" y="360" font-family="'DM Sans',sans-serif"
+            font-size="10" fill="var(--ink)" text-anchor="middle" opacity=".3">Disegnalo tu!</text>
+
+      <!-- ZONA ZAMPE — label in basso -->
+      <rect x="216" y="462" width="130" height="48" rx="10"
+            fill="none" stroke="var(--ink)" stroke-width="1.8" stroke-dasharray="6,4"/>
+      <text x="281" y="482" font-family="'Bricolage Grotesque',sans-serif"
+            font-size="10" font-weight="700" fill="var(--ink)" text-anchor="middle" opacity=".5">Le zampe</text>
+      <text x="281" y="498" font-family="'DM Sans',sans-serif"
+            font-size="8.5" fill="var(--ink)" text-anchor="middle" opacity=".4">Quante ne ha?</text>
+      <!-- freccia verso corpo -->
+      <path d="M281 462 L300 448" stroke="var(--ink)" stroke-width="1.5" fill="none" stroke-dasharray="4,3" opacity=".5"/>
+
+      <rect x="394" y="462" width="130" height="48" rx="10"
+            fill="none" stroke="var(--ink)" stroke-width="1.8" stroke-dasharray="6,4"/>
+      <text x="459" y="482" font-family="'Bricolage Grotesque',sans-serif"
+            font-size="10" font-weight="700" fill="var(--ink)" text-anchor="middle" opacity=".5">La coda</text>
+      <text x="459" y="498" font-family="'DM Sans',sans-serif"
+            font-size="8.5" fill="var(--ink)" text-anchor="middle" opacity=".4">Che forma ha?</text>
+      <path d="M459 462 L440 448" stroke="var(--ink)" stroke-width="1.5" fill="none" stroke-dasharray="4,3" opacity=".5"/>
+
+      <!-- ZONA ALI / speciale — a destra -->
+      <rect x="510" y="288" width="136" height="64" rx="10"
+            fill="none" stroke="var(--ink)" stroke-width="1.8" stroke-dasharray="6,4"/>
+      <text x="578" y="314" font-family="'Bricolage Grotesque',sans-serif"
+            font-size="10" font-weight="700" fill="var(--ink)" text-anchor="middle" opacity=".5">Ali o pinne?</text>
+      <text x="578" y="330" font-family="'DM Sans',sans-serif"
+            font-size="8.5" fill="var(--ink)" text-anchor="middle" opacity=".4">Decidilo tu!</text>
+      <text x="578" y="344" font-family="'DM Sans',sans-serif"
+            font-size="8.5" fill="var(--ink)" text-anchor="middle" opacity=".4">Forse nessuna?</text>
+      <path d="M510 320 L492 330" stroke="var(--ink)" stroke-width="1.5" fill="none" stroke-dasharray="4,3" opacity=".5"/>
+
+      <!-- ZONA COLORI — in basso a sinistra -->
+      <text x="66" y="320" font-family="'Bricolage Grotesque',sans-serif"
+            font-size="10" font-weight="700" fill="var(--ink)" text-anchor="middle" opacity=".55">Di che colore è?</text>
+      <!-- 4 cerchi vuoti per colorare -->
+      <circle cx="38" cy="346" r="18" fill="none" stroke="var(--ink)" stroke-width="2"/>
+      <circle cx="70" cy="346" r="18" fill="none" stroke="var(--ink)" stroke-width="2"/>
+      <circle cx="38" cy="380" r="18" fill="none" stroke="var(--ink)" stroke-width="2"/>
+      <circle cx="70" cy="380" r="18" fill="none" stroke="var(--ink)" stroke-width="2"/>
+
+      <!-- NOME dell'animale — linea di scrittura -->
+      <text x="66" y="428" font-family="'Bricolage Grotesque',sans-serif"
+            font-size="9" font-weight="700" fill="var(--ink)" text-anchor="middle" opacity=".5">Il suo nome è...</text>
+      <line x1="18" y1="446" x2="114" y2="446" stroke="var(--ink)" stroke-width="1.5" opacity=".35"/>
+
+      <!-- CUBETTO companion (piccolo, in basso a destra) -->
+      <g transform="translate(590,382) scale(1.1)">
+        <rect x="12" y="20" width="46" height="46" rx="5" fill="#F2BD36" stroke="var(--ink)" stroke-width="2"/>
+        <path d="M58 20 L70 10 L70 56 L58 66Z" fill="#E0A820" stroke="var(--ink)" stroke-width="2"/>
+        <path d="M12 20 L24 10 L70 10 L58 20Z" fill="#FFD659" stroke="var(--ink)" stroke-width="2"/>
+        <circle cx="28" cy="42" r="5" fill="var(--ink)"/>
+        <circle cx="46" cy="42" r="5" fill="var(--ink)"/>
+        <circle cx="30" cy="40" r="1.6" fill="white"/>
+        <circle cx="48" cy="40" r="1.6" fill="white"/>
+        <path d="M25 53 Q37 61 49 53" stroke="var(--ink)" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <line x1="34" y1="20" x2="29" y2="6" stroke="var(--ink)" stroke-width="2.5"/>
+        <polygon points="29,6 22,-2 38,-2" fill="#E95A2B" stroke="var(--ink)" stroke-width="1.5"/>
+        <rect x="-4" y="32" width="16" height="9" rx="2.5" fill="#F2BD36" stroke="var(--ink)" stroke-width="1.5"/>
+        <rect x="58" y="32" width="16" height="9" rx="2.5" fill="#F2BD36" stroke="var(--ink)" stroke-width="1.5"/>
+        <rect x="18" y="66" width="12" height="18" rx="3" fill="#F2BD36" stroke="var(--ink)" stroke-width="1.5"/>
+        <rect x="36" y="66" width="12" height="18" rx="3" fill="#F2BD36" stroke="var(--ink)" stroke-width="1.5"/>
+        <!-- fumetto -->
+        <path d="M-75 -12 Q-48 -30 10 -10 Q22 -2 10 12 Q-20 28 -70 12 Q-84 4 -75 -12Z"
+              fill="white" stroke="var(--ink)" stroke-width="1.5"/>
+        <path d="M10 12 L18 26 L4 14" fill="white" stroke="var(--ink)" stroke-width="1.5"/>
+        <text x="-32" y="4" font-family="'Bricolage Grotesque',sans-serif"
+              font-size="8.5" font-weight="700" fill="var(--ink)" text-anchor="middle">Fantastico!</text>
+      </g>
+
+    </svg>
+  </div>
+
+  <!-- CONSIGNA -->
+  <div class="consigna">
+    <svg class="consigna-icon" viewBox="0 0 28 28" fill="none">
+      <rect x="2" y="2" width="24" height="24" rx="6" fill="#B57EDC" stroke="var(--ink)" stroke-width="2"/>
+      <path d="M8 14 L12 18 L20 10" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <p class="consigna-text">Inventa il tuo animale fantastico! La testa è già lì — tu disegna il corpo, le zampe, la coda e tutto quello che vuoi.</p>
+  </div>
+
+  <!-- VARIANTI -->
+  <div class="variants">
+    <div>
+      <span class="v-age">3 anni</span>
+      <span class="v-desc">Disegna le zampe e scegli i colori per l'animale nei cerchi.</span>
+    </div>
+    <div>
+      <span class="v-age">4 anni</span>
+      <span class="v-desc">Aggiungi zampe, coda e qualcosa di speciale: ali, scaglie, macchie…</span>
+    </div>
+    <div>
+      <span class="v-age">5 anni</span>
+      <span class="v-desc">Dai un nome all'animale, disegna dove vive e cosa mangia ogni giorno.</span>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <span>Mente in Gioco™ — 30 giorni di gioco creativo</span>
+    <span>Attività 3 di 3 · Pilota</span>
+  </div>
+
+</div>
+</body>
+</html>

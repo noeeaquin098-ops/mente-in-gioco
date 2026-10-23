@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ficha 2 — La mia casa speciale · Mente in Gioco™</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --cream:#F8F1E4;--dark:#173D35;--orange:#E95A2B;
+  --yellow:#F2BD36;--green:#39734B;--blue:#4DB9F4;
+  --ink:#3D2B1A
+}
+body{
+  font-family:'DM Sans',sans-serif;
+  background:#5B8FA8;
+  display:flex;justify-content:center;
+  padding:28px;min-height:100vh
+}
+.page{
+  width:210mm;background:var(--cream);
+  padding:10mm 13mm 9mm;
+  display:flex;flex-direction:column;gap:3.5mm;
+  box-shadow:0 8px 40px rgba(0,0,0,.3)
+}
+.header{
+  background:var(--dark);border-radius:13px;
+  padding:4.5mm 7mm;
+  display:grid;grid-template-columns:auto 1fr 52px;
+  align-items:center;gap:5mm;min-height:19mm
+}
+.brand-block{display:flex;flex-direction:column;gap:1mm}
+.brand-name{
+  font-family:'Bricolage Grotesque',sans-serif;
+  font-size:10pt;font-weight:800;
+  color:var(--yellow);letter-spacing:.3px
+}
+.ficha-ref{
+  font-size:7pt;color:rgba(255,255,255,.6);
+  text-transform:uppercase;letter-spacing:1px
+}
+.ficha-title{
+  font-family:'Bricolage Grotesque',sans-serif;
+  font-size:17pt;font-weight:800;
+  color:#fff;text-align:center;line-height:1.1
+}
+.header-char{
+  width:52px;height:52px;object-fit:contain;
+  border-radius:8px;overflow:hidden
+}
+.canvas{
+  background:#fff;border-radius:10px;
+  border:2.5px solid var(--dark);
+  flex:1;display:flex;align-items:stretch;
+  min-height:148mm;overflow:hidden
+}
+.canvas svg{width:100%;height:100%;display:block}
+.consigna{
+  background:#fff;border:2px solid var(--blue);
+  border-radius:10px;padding:3.5mm 5mm;
+  display:flex;align-items:center;gap:4mm
+}
+.consigna-icon{width:28px;height:28px;flex-shrink:0}
+.consigna-text{
+  font-family:'Bricolage Grotesque',sans-serif;
+  font-weight:700;font-size:11.5pt;
+  color:var(--dark);line-height:1.35
+}
+.variants{
+  background:var(--dark);border-radius:9px;
+  padding:3mm 5mm;
+  display:grid;grid-template-columns:repeat(3,1fr);gap:3mm
+}
+.v-age{
+  font-size:7pt;font-weight:500;color:var(--blue);
+  text-transform:uppercase;letter-spacing:.8px;
+  margin-bottom:1.5mm;display:block
+}
+.v-desc{font-size:8pt;color:#fff;line-height:1.4}
+.footer{
+  display:flex;justify-content:space-between;padding:0 1mm
+}
+.footer span{font-size:7pt;color:var(--dark);opacity:.5}
+@media print{
+  *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+  body{background:none;padding:0;margin:0}
+  .page{box-shadow:none}
+  @page{size:A4;margin:0}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="brand-block">
+      <span class="brand-name">Mente in Gioco™</span>
+      <span class="ficha-ref">Attività 2 · 3–5 anni</span>
+    </div>
+    <div class="ficha-title">La mia casa<br>speciale</div>
+    <img class="header-char" src="../img/char-nubola.png" alt="Nubola">
+  </div>
+
+  <!-- CANVAS — organic house with large open areas to color and decorate -->
+  <div class="canvas">
+    <svg viewBox="0 0 740 535" xmlns="http://www.w3.org/2000/svg">
+      <rect width="740" height="535" fill="white"/>
+
+      <!-- SKY / sfondo in cima -->
+      <!-- Sole (top right) -->
+      <circle cx="672" cy="62" r="38" fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+      <!-- Raggi del sole -->
+      <g stroke="var(--ink)" stroke-width="2" stroke-linecap="round">
+        <line x1="672" y1="16" x2="672" y2="10"/>
+        <line x1="700" y1="24" x2="704" y2="19"/>
+        <line x1="718" y1="48" x2="724" y2="46"/>
+        <line x1="718" y1="76" x2="724" y2="79"/>
+        <line x1="700" y1="100" x2="704" y2="105"/>
+        <line x1="672" y1="108" x2="672" y2="114"/>
+        <line x1="644" y1="100" x2="640" y2="105"/>
+        <line x1="626" y1="76" x2="620" y2="79"/>
+        <line x1="626" y1="48" x2="620" y2="46"/>
+        <line x1="644" y1="24" x2="640" y2="19"/>
+      </g>
+
+      <!-- Nuvola 1 (left) -->
+      <g fill="none" stroke="var(--ink)" stroke-width="2.2">
+        <path d="M50 72 Q55 50 78 50 Q82 38 100 38 Q120 38 124 54 Q138 52 142 66 Q150 68 148 80 Q146 90 134 90 L60 90 Q46 88 50 72Z"/>
+      </g>
+      <!-- Nuvola 2 (center-left) -->
+      <g fill="none" stroke="var(--ink)" stroke-width="2.2">
+        <path d="M220 58 Q225 40 246 40 Q250 28 268 28 Q286 28 290 42 Q302 40 306 54 Q312 56 310 68 Q308 76 298 76 L232 76 Q218 74 220 58Z"/>
+      </g>
+
+      <!-- COLLINA / terra -->
+      <path d="M0 415 Q140 330 320 350 Q500 370 740 330 L740 535 L0 535Z"
+            fill="#D9EDCF" stroke="var(--ink)" stroke-width="2"/>
+
+      <!-- CASA principale — forma organica, non perfettamente geometrica -->
+      <!-- Muri della casa -->
+      <path d="M210 420 L210 240 Q210 234 216 234 L524 234 Q530 234 530 240 L530 420Z"
+            fill="white" stroke="var(--ink)" stroke-width="3"/>
+      <!-- Tetto organico arrotondato -->
+      <path d="M190 242 Q200 190 260 164 Q320 140 368 136 Q416 132 460 144 Q512 160 546 190 Q558 208 550 242Z"
+            fill="#F5E8D0" stroke="var(--ink)" stroke-width="3"/>
+      <!-- Linea del tetto interna (effetto tegole) -->
+      <path d="M206 230 Q280 200 368 196 Q456 192 534 228"
+            fill="none" stroke="var(--ink)" stroke-width="1.5" stroke-dasharray="6,5" opacity=".5"/>
+      <!-- Camino -->
+      <rect x="430" y="136" width="36" height="52" rx="4" fill="white" stroke="var(--ink)" stroke-width="2.5"/>
+      <!-- Fumo dal camino (tratteggiato, da colorare/aggiungere) -->
+      <path d="M440 136 Q434 118 442 106 Q450 94 440 82"
+            fill="none" stroke="var(--ink)" stroke-width="1.8" stroke-dasharray="5,4" opacity=".55"/>
+      <path d="M456 132 Q464 112 456 100 Q448 88 458 76"
+            fill="none" stroke="var(--ink)" stroke-width="1.8" stroke-dasharray="5,4" opacity=".55"/>
+
+      <!-- PORTA (arco) — outline invito, label -->
+      <path d="M336 420 L336 336 Q336 312 368 312 Q400 312 400 336 L400 420Z"
+            fill="none" stroke="var(--ink)" stroke-width="2.5" stroke-dasharray="8,5"/>
+      <text x="368" y="374" font-family="'Bricolage Grotesque',sans-serif" font-size="9.5"
+            font-weight="700" fill="var(--ink)" text-anchor="middle" opacity=".5">Aggiungi</text>
+      <text x="368" y="386" font-family="'Bricolage Grotesque',sans-serif" font-size="9.5"
+            font-weight="700" fill="var(--ink)" text-anchor="middle" opacity=".5">la porta!</text>
+      <!-- Maniglia (puntino invito) -->
+      <circle cx="392" cy="366" r="4" fill="none" stroke="var(--ink)" stroke-width="1.8" stroke-dasharray="3,3" opacity=".5"/>
+
+      <!-- FINESTRA sinistra (cornice, croce interna, vuota da decorare) -->
+      <rect x="236" y="276" width="68" height="64" rx="8"
+            fill="none" stroke="var(--ink)" stroke-width="2.2"/>
+      <line x1="270" y1="276" x2="270" y2="340" stroke="var(--ink)" stroke-width="1.5"/>
+      <line x1="236" y1="308" x2="304" y2="308" stroke="var(--ink)" stroke-width="1.5"/>
+      <!-- Label finestra sx -->
+      <text x="270" y="360" font-family="'DM Sans',sans-serif" font-size="8.5"
+            fill="var(--ink)" text-anchor="middle" opacity=".45">Decorala!</text>
+
+      <!-- FINESTRA destra (cornice, croce, vuota) -->
+      <rect x="432" y="276" width="68" height="64" rx="8"
+            fill="none" stroke="var(--ink)" stroke-width="2.2"/>
+      <line x1="466" y1="276" x2="466" y2="340" stroke="var(--ink)" stroke-width="1.5"/>
+      <line x1="432" y1="308" x2="500" y2="308" stroke="var(--ink)" stroke-width="1.5"/>
+      <!-- Label finestra dx -->
+      <text x="466" y="360" font-family="'DM Sans',sans-serif" font-size="8.5"
+            fill="var(--ink)" text-anchor="middle" opacity=".45">Decorala!</text>
+
+      <!-- ALBERO sinistra — tronco che finisce alla base della chioma, senza rami interni -->
+      <g>
+        <path d="M104 420 Q101 396 104 368" fill="none" stroke="var(--ink)" stroke-width="4.5" stroke-linecap="round"/>
+        <!-- chioma bubbly organica — nuvola di foglie -->
+        <path d="M58 322 Q56 294 72 274 Q88 254 112 250 Q136 246 152 264 Q170 280 170 306 Q172 330 158 348 Q144 366 120 368 Q94 370 74 354 Q58 340 58 322Z"
+              fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+        <!-- irregolarità della chioma — effetto foglie -->
+        <path d="M72 284 Q82 268 98 262" fill="none" stroke="var(--ink)" stroke-width="1.6" opacity=".45" stroke-linecap="round"/>
+        <path d="M148 270 Q160 284 164 302" fill="none" stroke="var(--ink)" stroke-width="1.6" opacity=".45" stroke-linecap="round"/>
+        <path d="M62 340 Q68 356 80 364" fill="none" stroke="var(--ink)" stroke-width="1.6" opacity=".45" stroke-linecap="round"/>
+      </g>
+
+      <!-- ALBERO destra — forma simile ma proporzione diversa (più stretto, più alto) -->
+      <g>
+        <path d="M624 420 Q622 392 624 362" fill="none" stroke="var(--ink)" stroke-width="4.5" stroke-linecap="round"/>
+        <!-- chioma bubbly -->
+        <path d="M578 316 Q576 286 594 264 Q612 242 636 240 Q660 238 676 258 Q694 278 692 308 Q690 334 674 352 Q658 368 634 368 Q608 368 590 350 Q576 334 578 316Z"
+              fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+        <!-- irregolarità foglie -->
+        <path d="M590 272 Q602 256 618 250" fill="none" stroke="var(--ink)" stroke-width="1.6" opacity=".45" stroke-linecap="round"/>
+        <path d="M670 266 Q682 280 686 298" fill="none" stroke="var(--ink)" stroke-width="1.6" opacity=".45" stroke-linecap="round"/>
+        <path d="M578 342 Q586 358 600 364" fill="none" stroke="var(--ink)" stroke-width="1.6" opacity=".45" stroke-linecap="round"/>
+      </g>
+
+      <!-- RECINZIONE / siepe — bassa, davanti alla casa -->
+      <g stroke="var(--ink)" stroke-width="2" fill="none">
+        <!-- paletti sinistri -->
+        <path d="M130 435 L130 405 L136 398 L142 405 L142 435"/>
+        <path d="M152 435 L152 405 L158 398 L164 405 L164 435"/>
+        <path d="M174 435 L174 405 L180 398 L186 405 L186 435"/>
+        <!-- barra orizzontale sx -->
+        <line x1="130" y1="415" x2="210" y2="415"/>
+        <line x1="130" y1="425" x2="210" y2="425"/>
+        <!-- paletti destri -->
+        <path d="M554 435 L554 405 L560 398 L566 405 L566 435"/>
+        <path d="M576 435 L576 405 L582 398 L588 405 L588 435"/>
+        <path d="M598 435 L598 405 L604 398 L610 405 L610 435"/>
+        <!-- barra orizzontale dx -->
+        <line x1="530" y1="415" x2="610" y2="415"/>
+        <line x1="530" y1="425" x2="610" y2="425"/>
+      </g>
+
+      <!-- SENTIERO verso la porta -->
+      <path d="M310 420 Q300 460 270 490 L460 490 Q440 460 430 420Z"
+            fill="none" stroke="var(--ink)" stroke-width="2"/>
+      <!-- Sassolini/pietre del sentiero -->
+      <ellipse cx="368" cy="445" rx="12" ry="7" fill="none" stroke="var(--ink)" stroke-width="1.5" opacity=".4"/>
+      <ellipse cx="350" cy="465" rx="9" ry="5" fill="none" stroke="var(--ink)" stroke-width="1.5" opacity=".4"/>
+      <ellipse cx="388" cy="462" rx="9" ry="5" fill="none" stroke="var(--ink)" stroke-width="1.5" opacity=".4"/>
+
+      <!-- ZONE LIBERE nel giardino -->
+      <!-- Zona fiori sinistra -->
+      <rect x="142" y="444" width="90" height="56" rx="10"
+            fill="none" stroke="var(--ink)" stroke-width="1.5" stroke-dasharray="5,4"/>
+      <text x="187" y="470" font-family="'Bricolage Grotesque',sans-serif" font-size="9"
+            font-weight="700" fill="var(--ink)" text-anchor="middle" opacity=".45">Aggiungi</text>
+      <text x="187" y="482" font-family="'Bricolage Grotesque',sans-serif" font-size="9"
+            font-weight="700" fill="var(--ink)" text-anchor="middle" opacity=".45">i fiori!</text>
+
+      <!-- Zona fiori destra -->
+      <rect x="508" y="444" width="90" height="56" rx="10"
+            fill="none" stroke="var(--ink)" stroke-width="1.5" stroke-dasharray="5,4"/>
+      <text x="553" y="470" font-family="'Bricolage Grotesque',sans-serif" font-size="9"
+            font-weight="700" fill="var(--ink)" text-anchor="middle" opacity=".45">Aggiungi</text>
+      <text x="553" y="482" font-family="'Bricolage Grotesque',sans-serif" font-size="9"
+            font-weight="700" fill="var(--ink)" text-anchor="middle" opacity=".45">i fiori!</text>
+
+      <!-- NUBOLA (mini, in basso a destra) -->
+      <g transform="translate(598,416) scale(0.62)">
+        <ellipse cx="60" cy="60" rx="52" ry="50" fill="#4DB9F4" stroke="var(--ink)" stroke-width="2"/>
+        <ellipse cx="60" cy="48" rx="40" ry="38" fill="#4DB9F4" stroke="var(--ink)" stroke-width="2"/>
+        <ellipse cx="38" cy="42" rx="26" ry="26" fill="#4DB9F4" stroke="var(--ink)" stroke-width="2"/>
+        <ellipse cx="82" cy="42" rx="26" ry="26" fill="#4DB9F4" stroke="var(--ink)" stroke-width="2"/>
+        <circle cx="48" cy="55" r="5.5" fill="var(--ink)"/>
+        <circle cx="72" cy="55" r="5.5" fill="var(--ink)"/>
+        <circle cx="50" cy="53" r="1.8" fill="white"/>
+        <circle cx="74" cy="53" r="1.8" fill="white"/>
+        <path d="M46 66 Q60 76 74 66" stroke="var(--ink)" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <path d="M30 64 L32.5 57 L35 64 L28.5 60 L36 60Z" fill="#F2BD36"/>
+        <path d="M86 64 L88.5 57 L91 64 L84.5 60 L92 60Z" fill="#F2BD36"/>
+        <ellipse cx="40" cy="108" rx="15" ry="16" fill="#4DB9F4" stroke="var(--ink)" stroke-width="2"/>
+        <ellipse cx="80" cy="108" rx="15" ry="16" fill="#4DB9F4" stroke="var(--ink)" stroke-width="2"/>
+        <!-- fumetto -->
+        <path d="M-80 10 Q-52 -16 22 2 Q36 10 24 26 Q-8 40 -74 24 Q-88 18 -80 10Z"
+              fill="white" stroke="var(--ink)" stroke-width="1.5"/>
+        <path d="M2 26 L14 40 L-2 28" fill="white" stroke="var(--ink)" stroke-width="1.5"/>
+        <text x="-30" y="20" font-family="'Bricolage Grotesque',sans-serif"
+              font-size="9" font-weight="700" fill="var(--ink)" text-anchor="middle">La tua!</text>
+      </g>
+
+    </svg>
+  </div>
+
+  <!-- CONSIGNA -->
+  <div class="consigna">
+    <svg class="consigna-icon" viewBox="0 0 28 28" fill="none">
+      <circle cx="14" cy="14" r="13" fill="#4DB9F4" stroke="var(--ink)" stroke-width="2"/>
+      <circle cx="9" cy="12" r="2.5" fill="var(--ink)"/>
+      <circle cx="19" cy="12" r="2.5" fill="var(--ink)"/>
+      <path d="M8 18 Q14 24 20 18" stroke="var(--ink)" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </svg>
+    <p class="consigna-text">Questa è la tua casa speciale! Colora le mura, aggiungi una porta, decora le finestre e un bellissimo giardino.</p>
+  </div>
+
+  <!-- VARIANTI -->
+  <div class="variants">
+    <div>
+      <span class="v-age">3 anni</span>
+      <span class="v-desc">Colora la casa con i colori che vuoi tu. Di che colore è il tetto?</span>
+    </div>
+    <div>
+      <span class="v-age">4 anni</span>
+      <span class="v-desc">Disegna una porta e decora le due finestre. Aggiungi i fiori nel giardino.</span>
+    </div>
+    <div>
+      <span class="v-age">5 anni</span>
+      <span class="v-desc">Aggiungi tutto: porta, finestre, giardino fiorito, un sentiero e chi abita dentro.</span>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <span>Mente in Gioco™ — 30 giorni di gioco creativo</span>
+    <span>Attività 2 di 3 · Pilota</span>
+  </div>
+
+</div>
+</body>
+</html>
