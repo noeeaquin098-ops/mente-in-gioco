@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ficha 3 — La casa delle forme · Mente in Gioco™</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --cream:#F8F1E4;--dark:#173D35;--orange:#E95A2B;
+  --yellow:#F2BD36;--green:#39734B;--blue:#4DB9F4;
+  --pink:#F78FB3;--violet:#B57EDC
+}
+body{
+  font-family:'DM Sans',sans-serif;
+  background:#9A9340;
+  display:flex;justify-content:center;
+  padding:28px;min-height:100vh
+}
+.page{
+  width:210mm;background:var(--cream);
+  padding:13mm 15mm 10mm;
+  display:flex;flex-direction:column;gap:4.5mm;
+  box-shadow:0 8px 40px rgba(0,0,0,.3)
+}
+.header{
+  background:var(--dark);border-radius:13px;
+  padding:5mm 7mm;
+  display:grid;grid-template-columns:auto 1fr auto;
+  align-items:center;gap:5mm;min-height:21mm
+}
+.brand-block{display:flex;flex-direction:column;gap:1mm}
+.brand-name{
+  font-family:'Bricolage Grotesque',sans-serif;
+  font-size:10pt;font-weight:800;
+  color:var(--yellow);letter-spacing:.3px
+}
+.ficha-ref{
+  font-size:7pt;color:rgba(255,255,255,.6);
+  text-transform:uppercase;letter-spacing:1px
+}
+.ficha-title{
+  font-family:'Bricolage Grotesque',sans-serif;
+  font-size:17pt;font-weight:800;
+  color:#fff;text-align:center;line-height:1.1
+}
+.canvas{
+  background:#fff;border-radius:10px;
+  border:2.5px solid var(--dark);
+  flex:1;display:flex;align-items:stretch;
+  min-height:147mm;overflow:hidden
+}
+.canvas svg{width:100%;height:100%;display:block}
+.consigna{
+  background:#fff;border:2px solid var(--yellow);
+  border-radius:10px;padding:3.5mm 5mm;
+  display:flex;align-items:center;gap:4mm
+}
+.consigna-icon{width:30px;height:30px;flex-shrink:0}
+.consigna-text{
+  font-family:'Bricolage Grotesque',sans-serif;
+  font-weight:700;font-size:12pt;
+  color:var(--dark);line-height:1.35
+}
+.variants{
+  background:var(--dark);border-radius:9px;
+  padding:3mm 5mm;
+  display:grid;grid-template-columns:repeat(3,1fr);gap:3mm
+}
+.v-age{
+  font-size:7pt;font-weight:500;color:var(--yellow);
+  text-transform:uppercase;letter-spacing:.8px;
+  margin-bottom:1.5mm;display:block
+}
+.v-desc{font-size:8pt;color:#fff;line-height:1.4}
+.footer{
+  display:flex;justify-content:space-between;padding:0 1mm
+}
+.footer span{font-size:7pt;color:var(--dark);opacity:.5}
+@media print{
+  *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+  body{background:none;padding:0;margin:0}
+  .page{box-shadow:none}
+  @page{size:A4;margin:0}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="brand-block">
+      <span class="brand-name">Mente in Gioco™</span>
+      <span class="ficha-ref">Attività 3 · 3–5 anni</span>
+    </div>
+    <div class="ficha-title">La casa<br>delle forme</div>
+    <!-- Cubetto mini (header) -->
+    <svg width="56" height="66" viewBox="0 0 56 66" fill="none">
+      <!-- corpo cubo principale -->
+      <rect x="12" y="20" width="32" height="32" rx="4" fill="#F2BD36" stroke="#173D35" stroke-width="2"/>
+      <!-- faccia laterale cubo (isometria semplificata) -->
+      <path d="M44 20 L52 14 L52 46 L44 52Z" fill="#E0A820" stroke="#173D35" stroke-width="2"/>
+      <!-- faccia superiore cubo -->
+      <path d="M12 20 L20 14 L52 14 L44 20Z" fill="#FFD659" stroke="#173D35" stroke-width="2"/>
+      <!-- face (sulla faccia frontale) -->
+      <circle cx="24" cy="34" r="3.5" fill="#173D35"/>
+      <circle cx="38" cy="34" r="3.5" fill="#173D35"/>
+      <circle cx="25.5" cy="32.5" r="1.2" fill="white"/>
+      <circle cx="39.5" cy="32.5" r="1.2" fill="white"/>
+      <path d="M22 43 Q31 49 40 43" stroke="#173D35" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <!-- antenna con triangolino -->
+      <line x1="28" y1="20" x2="24" y2="8" stroke="#173D35" stroke-width="2"/>
+      <polygon points="24,8 18,2 30,2" fill="#E95A2B" stroke="#173D35" stroke-width="1.5"/>
+      <!-- braccia cubo (rettangolini) -->
+      <rect x="-2" y="28" width="14" height="8" rx="2" fill="#F2BD36" stroke="#173D35" stroke-width="1.5"/>
+      <rect x="44" y="28" width="14" height="8" rx="2" fill="#F2BD36" stroke="#173D35" stroke-width="1.5"/>
+      <!-- gambe cubo -->
+      <rect x="16" y="52" width="10" height="14" rx="3" fill="#F2BD36" stroke="#173D35" stroke-width="1.5"/>
+      <rect x="30" y="52" width="10" height="14" rx="3" fill="#F2BD36" stroke="#173D35" stroke-width="1.5"/>
+    </svg>
+  </div>
+
+  <!-- CANVAS — paesaggio geometrico con forme + zone vuote -->
+  <div class="canvas">
+    <svg viewBox="0 0 740 520" xmlns="http://www.w3.org/2000/svg">
+      <rect width="740" height="520" fill="white"/>
+
+      <!-- CIELO gradiente leggero con forme geometriche fluttuanti -->
+      <!-- Cerchio (sole geometrico) -->
+      <circle cx="640" cy="68" r="40" fill="none" stroke="#173D35" stroke-width="2.5"/>
+      <circle cx="640" cy="68" r="26" fill="none" stroke="#173D35" stroke-width="1.5"/>
+      <!-- Triangolo nuvola 1 -->
+      <polygon points="60,58 110,18 160,58" fill="none" stroke="#173D35" stroke-width="2"/>
+      <rect x="70" y="58" width="80" height="18" fill="white" stroke="none"/>
+      <line x1="70" y1="62" x2="150" y2="62" stroke="#173D35" stroke-width="2"/>
+      <!-- Rettangolo nuvola 2 -->
+      <rect x="255" y="28" width="115" height="35" rx="17" fill="none" stroke="#173D35" stroke-width="2"/>
+      <polygon points="300,56 292,72 310,56" fill="none" stroke="#173D35" stroke-width="1.5"/>
+      <!-- Esagono decorativo -->
+      <polygon points="470,20 492,30 492,52 470,62 448,52 448,30" fill="none" stroke="#173D35" stroke-width="2"/>
+
+      <!-- MONTAGNA sinistra — triangolo grande -->
+      <polygon points="0,420 130,180 260,420" fill="none" stroke="#173D35" stroke-width="2.5"/>
+      <!-- neve sul picco -->
+      <polygon points="130,180 108,230 152,230" fill="none" stroke="#173D35" stroke-width="1.5"/>
+
+      <!-- MONTAGNA destra — triangolo trapezoidale -->
+      <polygon points="480,420 610,210 740,420" fill="none" stroke="#173D35" stroke-width="2.5"/>
+      <polygon points="610,210 592,252 628,252" fill="none" stroke="#173D35" stroke-width="1.5"/>
+
+      <!-- CASA centrale (forme geometriche scomposte) -->
+      <g transform="translate(280,215)">
+        <!-- base casa rettangolare -->
+        <rect x="0" y="70" width="140" height="105" rx="3" fill="none" stroke="#173D35" stroke-width="2.5"/>
+        <!-- tetto triangolo -->
+        <polygon points="-12,70 70,-8 152,70" fill="none" stroke="#173D35" stroke-width="2.5"/>
+        <!-- camino rettangolo -->
+        <rect x="100" y="-20" width="20" height="40" fill="none" stroke="#173D35" stroke-width="2"/>
+        <!-- porta arco -->
+        <path d="M52 175 L52 125 Q70 108 88 125 L88 175Z" fill="none" stroke="#173D35" stroke-width="2"/>
+        <!-- finestra cerchio (sinistra) -->
+        <circle cx="28" cy="120" r="16" fill="none" stroke="#173D35" stroke-width="2"/>
+        <line x1="28" y1="104" x2="28" y2="136" stroke="#173D35" stroke-width="1"/>
+        <line x1="12" y1="120" x2="44" y2="120" stroke="#173D35" stroke-width="1"/>
+        <!-- finestra quadrata (destra) -->
+        <rect x="94" y="104" width="32" height="32" rx="2" fill="none" stroke="#173D35" stroke-width="2"/>
+        <line x1="94" y1="120" x2="126" y2="120" stroke="#173D35" stroke-width="1"/>
+        <line x1="110" y1="104" x2="110" y2="136" stroke="#173D35" stroke-width="1"/>
+      </g>
+
+      <!-- ALBERO geometrico sinistra (triangoli) -->
+      <g transform="translate(68,275)">
+        <rect x="22" y="106" width="12" height="40" rx="2" fill="none" stroke="#173D35" stroke-width="2"/>
+        <polygon points="28,0 56,50 0,50" fill="none" stroke="#173D35" stroke-width="2"/>
+        <polygon points="28,35 60,88 -4,88" fill="none" stroke="#173D35" stroke-width="2"/>
+        <polygon points="28,72 58,118 -2,118" fill="none" stroke="#173D35" stroke-width="2"/>
+      </g>
+
+      <!-- ALBERO geometrico destra (rombo + triangoli) -->
+      <g transform="translate(598,272)">
+        <rect x="24" y="104" width="12" height="42" rx="2" fill="none" stroke="#173D35" stroke-width="2"/>
+        <polygon points="30,0 58,52 2,52" fill="none" stroke="#173D35" stroke-width="2"/>
+        <polygon points="30,40 60,90 0,90" fill="none" stroke="#173D35" stroke-width="2"/>
+        <polygon points="30,78 58,122 2,122" fill="none" stroke="#173D35" stroke-width="2"/>
+      </g>
+
+      <!-- RECINZIONE geometrica (quadratini) -->
+      <g stroke="#173D35" stroke-width="2" fill="none">
+        <rect x="44" y="400" width="18" height="22" rx="1"/>
+        <rect x="66" y="400" width="18" height="22" rx="1"/>
+        <rect x="88" y="400" width="18" height="22" rx="1"/>
+        <line x1="44" y1="406" x2="106" y2="406"/>
+        <line x1="44" y1="415" x2="106" y2="415"/>
+      </g>
+      <g stroke="#173D35" stroke-width="2" fill="none">
+        <rect x="606" y="400" width="18" height="22" rx="1"/>
+        <rect x="628" y="400" width="18" height="22" rx="1"/>
+        <rect x="650" y="400" width="18" height="22" rx="1"/>
+        <line x1="606" y1="406" x2="668" y2="406"/>
+        <line x1="606" y1="415" x2="668" y2="415"/>
+      </g>
+
+      <!-- SENTIERO (trapezio) -->
+      <path d="M315 430 L350 520 L390 520 L425 430Z" fill="none" stroke="#173D35" stroke-width="2"/>
+      <line x1="360" y1="445" x2="354" y2="520" stroke="#173D35" stroke-width="1" stroke-dasharray="5,4" opacity=".4"/>
+      <line x1="380" y1="445" x2="386" y2="520" stroke="#173D35" stroke-width="1" stroke-dasharray="5,4" opacity=".4"/>
+
+      <!-- ZONA LIBERA 1 (piccola, angolo) -->
+      <rect x="148" y="362" width="115" height="58" rx="8"
+            fill="none" stroke="#173D35" stroke-width="1.5" stroke-dasharray="5,4"/>
+      <text x="206" y="391" font-family="'DM Sans',sans-serif" font-size="9"
+            fill="#173D35" text-anchor="middle" opacity=".4">Aggiungi!</text>
+      <path d="M180 374 L190 374 M185 369 L185 379" stroke="#173D35" stroke-width="1.5" opacity=".4" stroke-linecap="round"/>
+
+      <!-- ZONA LIBERA 2 (centro-destra cielo) -->
+      <rect x="466" y="88" width="110" height="80" rx="8"
+            fill="none" stroke="#173D35" stroke-width="1.5" stroke-dasharray="5,4"/>
+      <text x="521" y="130" font-family="'DM Sans',sans-serif" font-size="9"
+            fill="#173D35" text-anchor="middle" opacity=".4">Disegna</text>
+      <text x="521" y="144" font-family="'DM Sans',sans-serif" font-size="9"
+            fill="#173D35" text-anchor="middle" opacity=".4">qualcosa!</text>
+
+      <!-- CUBETTO (grande, basso sinistra) -->
+      <g transform="translate(18,338) scale(1.4)">
+        <!-- corpo cubo -->
+        <rect x="12" y="24" width="46" height="46" rx="5" fill="#F2BD36" stroke="#173D35" stroke-width="2"/>
+        <!-- faccia laterale -->
+        <path d="M58 24 L70 14 L70 60 L58 70Z" fill="#E0A820" stroke="#173D35" stroke-width="2"/>
+        <!-- faccia superiore -->
+        <path d="M12 24 L24 14 L70 14 L58 24Z" fill="#FFD659" stroke="#173D35" stroke-width="2"/>
+        <!-- face -->
+        <circle cx="28" cy="46" r="5" fill="#173D35"/>
+        <circle cx="46" cy="46" r="5" fill="#173D35"/>
+        <circle cx="30" cy="44" r="1.6" fill="white"/>
+        <circle cx="48" cy="44" r="1.6" fill="white"/>
+        <path d="M25 57 Q37 65 49 57" stroke="#173D35" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <!-- antenna -->
+        <line x1="34" y1="24" x2="29" y2="10" stroke="#173D35" stroke-width="2.5"/>
+        <polygon points="29,10 22,2 38,2" fill="#E95A2B" stroke="#173D35" stroke-width="1.5"/>
+        <!-- braccia -->
+        <rect x="-4" y="36" width="16" height="9" rx="2.5" fill="#F2BD36" stroke="#173D35" stroke-width="1.5"/>
+        <rect x="58" y="36" width="16" height="9" rx="2.5" fill="#F2BD36" stroke="#173D35" stroke-width="1.5"/>
+        <!-- gambe -->
+        <rect x="18" y="70" width="12" height="18" rx="3" fill="#F2BD36" stroke="#173D35" stroke-width="1.5"/>
+        <rect x="36" y="70" width="12" height="18" rx="3" fill="#F2BD36" stroke="#173D35" stroke-width="1.5"/>
+        <!-- fumetto -->
+        <path d="M-65 -8 Q-38 -24 6 -8 Q18 0 8 12 Q-22 26 -62 12 Q-76 4 -65 -8Z"
+              fill="white" stroke="#173D35" stroke-width="1.5"/>
+        <path d="M8 12 L16 24 L2 14" fill="white" stroke="#173D35" stroke-width="1.5"/>
+        <text x="-30" y="4" font-family="'Bricolage Grotesque',sans-serif"
+              font-size="8.5" font-weight="700" fill="#173D35" text-anchor="middle">Costruisci!</text>
+      </g>
+    </svg>
+  </div>
+
+  <!-- CONSIGNA -->
+  <div class="consigna">
+    <svg class="consigna-icon" viewBox="0 0 30 30" fill="none">
+      <rect x="3" y="3" width="24" height="24" rx="5" fill="#F2BD36" stroke="#173D35" stroke-width="2"/>
+      <line x1="3" y1="15" x2="27" y2="15" stroke="#173D35" stroke-width="1.5"/>
+      <line x1="15" y1="3" x2="15" y2="27" stroke="#173D35" stroke-width="1.5"/>
+    </svg>
+    <p class="consigna-text">Colora ogni forma di un colore diverso e aggiungi qualcosa nelle zone vuote. Quante forme riesci a trovare?</p>
+  </div>
+
+  <!-- VARIANTI -->
+  <div class="variants">
+    <div>
+      <span class="v-age">3 anni</span>
+      <span class="v-desc">Colora le forme con i colori preferiti e nomina ogni figura.</span>
+    </div>
+    <div>
+      <span class="v-age">4 anni</span>
+      <span class="v-desc">Conta le forme e disegna altri oggetti usando solo triangoli e cerchi.</span>
+    </div>
+    <div>
+      <span class="v-age">5 anni</span>
+      <span class="v-desc">Trasforma le zone vuote in nuove stanze della casa e spiega cosa ci fa Cubetto lì dentro.</span>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <span>Mente in Gioco™ — 30 giorni di gioco creativo</span>
+    <span>Attività 3 di 3 · Pilota</span>
+  </div>
+
+</div>
+</body>
+</html>
