@@ -65,7 +65,8 @@ Nota: nei canvas delle fichas 02 e 03 il personaggio appare sia come `<img>` nel
 - ⚠️ Il fumetto di Lupino ("Colora!") è parzialmente visibile — il testo appare abbreviato nel render del canvas. Non causa confusione ma è un dettaglio da valutare.
 
 **Ficha-02 — La mia casa speciale:**
-- ✅ Margini sicuri — nessun elemento tagliato.
+- ⚠️ Render precedente: da rigenerare dopo la correzione del rapporto d'aspetto del canvas.
+- ✅ Margini e composizione del contenuto SVG da confermare sul nuovo render.
 - ✅ Casa con tetto organico, camino, due finestre con croce, porta tratteggiata.
 - ✅ Alberi con chiome arrotondate a "nuvola" (corretti dopo prima revisione: le versioni iniziali avevano rami incrociati visivamente simili a X).
 - ✅ Recinzione, sentiero, zone "Aggiungi i fiori!" con bordo tratteggiato.
@@ -74,6 +75,7 @@ Nota: nei canvas delle fichas 02 e 03 il personaggio appare sia come `<img>` nel
 - ⚠️ La zona cielo bianca nella metà superiore del canvas potrebbe sembrare "vuota" prima di capire che è spazio per disegnare — valutare se aggiungere un prompt leggero ("Disegna il cielo!") in una versione successiva.
 
 **Ficha-03 — Un animale fantastico:**
+- ⚠️ Render precedente: da rigenerare dopo la correzione del rapporto d'aspetto e il riposizionamento della zona ambiente.
 - ✅ Testa dell'animale (occhi, naso, bocca, baffi, orecchie) chiaramente disegnata come punto di partenza.
 - ✅ Badge "La testa è pronta! ✓" visibile.
 - ✅ Zone tratteggiate per corpo, zampe, coda, ali/pinne — leggibili e separate.
@@ -92,7 +94,7 @@ Nota: nei canvas delle fichas 02 e 03 il personaggio appare sia come `<img>` nel
 | Ficha-01: Lupino embedato come base64 (153 KB, difficile da aggiornare) | Tecnico | ✅ Corretto — ora usa `../img/char-lupino.png` |
 | Ficha-02 (prima versione): alberi con rami che attraversavano la chioma (effetto X) | Visivo | ✅ Corretto — chiome bubbly organiche senza rami interni |
 | Ficha-03: zona superiore del canvas non aveva invito esplicito | UX | ✅ Corretto — aggiunta zona "Dove vive?" tratteggiata |
-| Ficha-03: zona "Dove vive?" si sovrappone leggermente alla testa | Visivo lieve | ⚠️ Documentato — richiede valutazione umana |
+| Ficha-03: zona "Dove vive?" si sovrapponeva alla testa | Visivo | ✅ Corretto nel sorgente — zona ambiente spostata a sinistra; render aggiornato ancora da verificare |
 
 ---
 
@@ -118,28 +120,28 @@ Nota: nei canvas delle fichas 02 e 03 il personaggio appare sia come `<img>` nel
 
 ---
 
-## 7. Test di stampa
+## 7. Verifica digitale e stampa
 
-**Non testato su stampante fisica.** Verifica digitale effettuata tramite:
-- Render PNG a 1240×1754 px (equivalente ~150 dpi su A4)
-- Export PDF via Playwright/Chromium con `@page{size:A4}` e `print-background:true`
+**La verifica è esclusivamente digitale. Non è previsto un test su stampante fisica.**
 
-Elementi da verificare nella prima stampa reale:
-- Spessore contorni (2.5–3 px in SVG) — potrebbe variare leggermente con diversi driver di stampa
-- Colori piatti (#173D35, #F8F1E4) — devono rimanere leggibili a colori
-- In B&N: le zone tratteggiate (porta, fiori, corpo animale) restano visibili
+- Il formato di pagina deve restare A4 (210 × 297 mm).
+- Dopo le ultime modifiche a ficha-02 e ficha-03, i PNG e il PDF presenti in `pilot/review/` sono render precedenti e devono essere rigenerati prima di dichiarare chiuso il pilota.
+- Rigenerare i PNG delle tre fichas e il PDF di 3 pagine con Playwright/Chromium, `@page{size:A4;margin:0}` e sfondi di stampa abilitati.
+- Controllare digitalmente che ogni pagina occupi correttamente l'A4, che il canvas non lasci grandi bande bianche dovute al rapporto d'aspetto e che nessun elemento sia tagliato o sovrapposto.
+
+**Nessuna verifica fisica è richiesta o prevista.**
 
 ---
 
 ## 8. Aspetti che richiedono approvazione umana
 
 1. **Design di ficha-01**: mantenere il layout v3 (diverso da 02/03) o uniformare?
-2. **Zona "Dove vive?" in ficha-03**: accettare la leggera sovrapposizione con la testa, o riposizionare?
-3. **Zona cielo di ficha-02**: aggiungere un prompt ("Disegna il cielo!") o lasciare libero?
+2. **Zona "Dove vive?" in ficha-03**: riposizionata in alto a sinistra per evitare la sovrapposizione; verificare sul nuovo render.
+3. **Zona cielo di ficha-02**: aggiunto il prompt discreto "Disegna il cielo!"; confermare sul nuovo render che non interferisca con il disegno.
 4. **Personaggi inline nei canvas**: le versioni SVG piccole di Nubola e Cubetto nel canvas sono fedeli ma non identiche alle PNG — confermare se sono accettabili o se si preferisce usare le PNG originali anche lì (richiederebbe absolute positioning).
 5. **Testimonianze per Lupino**: il fumetto di Lupino è visibile ma piccolo in ficha-01 — valutare se ingrandire.
 
 ---
 
-*Produzione pronta per revisione umana. Nessuna delle 27 fichas restanti è stata creata.*  
+*Stato aggiornato: sorgenti di ficha-02 e ficha-03 corretti. Pilota non ancora chiuso: rigenerare i tre PNG e il PDF, quindi verificare digitalmente il layout A4 e aggiornare questo rapporto. Nessuna delle 27 fichas restanti è stata creata.*  
 *Approvazione finale spetta alla responsabile del prodotto.*
